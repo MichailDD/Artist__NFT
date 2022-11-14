@@ -1,4 +1,136 @@
 body{
     background-color: #1D1F21;
-    
+}
+.inspire {
+    position: relative;
+    // .inspire__blur
+
+    &__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    // .inspire__deco1
+
+    &__deco1 {
+    }
+
+    // .inspire__deco2
+
+    &__deco2 {
+    }
+
+    // .inspire__circle
+
+    &__circle {
+    }
+
+    // .inspire__circle-small
+
+    &__circle-small {
+    }
+
+    // .inspire__container
+
+    &__container {
+        // padding-top: rem(79);
+    }
+
+    // .inspire__content
+
+    &__content {
+        display: flex;
+    }
+
+    // .inspire__left
+
+    &__left {
+    }
+
+    // .inspire__social
+
+    &__social {
+    }
+
+    // .inspire__link
+
+    &__link {
+    }
+
+    // .inspire__text
+
+    &__text {
+        
+    }
+
+    // .inspire__title
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(64);
+        line-height: rem(65);
+    }
+
+    // .inspire__subtitle
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+    }
+
+    // .inspire__actions
+
+    &__actions {
+    }
+
+    // .inspire__btn-bg
+
+    &__btn-bg {
+    }
+
+    // .inspire__btn
+
+    &__btn {
+    }
+
+    // .inspire__hero
+
+    &__hero {
+    }
+}
+.button-bg {
+}
+.button {
+}
+.hero {
+
+    // .hero__bg
+
+    &__bg {
+        @include adaptiveValue("width",460 ,345 );
+        @include adaptiveValue("height",633 ,306 );
+        background: url(../img/inspire/bg.jpg);
+        border-radius: rem(24);
+        position: absolute;
+        top: rem(70);
+        right: rem(165);
+        @media (max-width:$mobile){
+             width: rem(345);
+             height: rem(306); 
+        }
+    }
+
+    // .hero__image
+
+    &__image {
+        position: relative;
+       img{
+        z-index: 5;
+       }
+        
+    }
 }
