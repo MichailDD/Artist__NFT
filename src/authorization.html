@@ -9,9 +9,38 @@
         <div class="container">
             <img src="img/logo.svg" alt="">
             <h1>Authorization</h1>
-            <p>asdsadsa</p>
+            <div class="switch-admin">
+                <button type="button " class="button-bg inspire__btn-bg button-active loginjs">Log in</button>
+                <button type="button" class="button-unactive signinjs">Sign up</button>
+            </div>
+            <div class="select-role-admin">
+                <label>Select your role</label>
+                <div class="select">
+                    <p><input type="radio" name="select-role" id="" checked>Customer</p>
+                    <p><input type="radio" name="select-role" id="">Admin</p>
+                    <p><input type="radio" name="select-role" id="">Artist</p>
+                </div>
+            </div>
+            <form>
+                <label>E-mail</label>
+                <input type="text" placeholder="Your e-mail">
+                <label>Passwrod</label>
+                <input type="text" placeholder="Your password">
+                <button type="submit" class="button-bg inspire__btn-bg">Send message</button>
+            </form>
+            <div class="bottom-text login-bottom-text">
+                <p>Don’t have account yet?</p>
+                <a href="#">Sign up</a>
+            </div>
+            <div class="bottom-text signin-bottom-text">
+                <p>Already have accoun?</p>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </main>
+    <script>
+        // console.log('olko')
+    </script>
     @@include('html/_js.htm',{})
 </body>
 
