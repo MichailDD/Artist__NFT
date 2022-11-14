@@ -1,1 +1,12 @@
 // Заголовки, общие БЄМ блоки и проче...
+.button {
+	display: inline-flex;
+	padding: 0px 0px;
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

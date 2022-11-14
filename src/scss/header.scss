@@ -1,4 +1,155 @@
 //====================================================================================================
+.header {
+	background-color: #1D1F21;
+	// .header__container
+
+	&__container {
+		display: flex;
+		align-items: center;
+		padding-top: rem(15);
+		padding-bottom: rem(17);
+		padding-left: rem(8);
+	}
+
+	// .header__logo
+
+	&__logo {
+	}
+	&__spoler{
+		display: flex;
+		align-items: center;
+		gap: rem(9);
+		width: rem(74);
+		height:rem(35);
+		background: #212426;
+		border-radius: rem(7);
+		justify-content: center;
+		transition: all 0.8s;
+		@media (any-hover: hover){
+			&:hover{
+				img{
+					transition: all 0.8s;
+					transform: rotate(180deg);
+
+				}
+			}
+		}
+	}
+	// .header__menu
+
+	&__menu {
+		flex: 1 1 auto;
+		padding-left: rem(34);
+		
+	}
+
+	// .header__actions
+
+	&__actions {
+		display: flex;
+	}
+
+	// .header__language
+
+	&__language {
+	}
+
+	// .header__lang
+
+	&__lang {
+	}
+
+	// .header__buttons
+
+	&__buttons {
+	}
+
+	// .header__btn
+
+	&__btn {
+		
+	
+		
+
+	}
+
+	// .header__btn-bg
+
+	&__btn-bg {
+	}
+
+	// .header__crown
+
+	&__crown {
+		display: none;
+		@media (max-width:$mobile){
+			 display: block; 
+		}
+	}
+}
+.menu {
+
+	// .menu__icon
+
+	&__icon {
+	}
+
+	// .menu__body
+
+	&__body {
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap",26 ,16 );
+	}
+
+	// .menu__item
+
+	&__item {
+		&-img{
+			display: flex;
+			align-items: center;
+			gap: rem(9);
+			padding-left: rem(3);
+		}
+	}
+
+	// .menu__link
+
+	&__link {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 400;
+		font-size: rem(14);
+		line-height: rem(19);
+		color: #C8D2DC;
+	}
+}
+.icon-menu {
+}
+.spollers {
+
+	// .spollers__item
+
+	&__item {
+	}
+
+	// .spollers__title
+
+	&__title {
+	}
+
+	// .spollers__body
+
+	&__body {
+	}
+}
+.button {
+}
 
 //====================================================================================================
 
