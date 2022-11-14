@@ -205,7 +205,9 @@
 		}
 	}
 	@media (any-hover: hover){
-		
+		&:hover{
+			color: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);;
+		}
 	}
 }
 .icon-menu {
@@ -265,7 +267,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			
+			background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
 			
 			
 		}
