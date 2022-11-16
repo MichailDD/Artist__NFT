@@ -38,3 +38,16 @@ switch_container.addEventListener('click', (e) => {
         }
     }
 })
+
+const openAdminPage = document.querySelector('.open-admin-page');
+const selectRoleAdmin = document.querySelector('.select-role-admin').querySelectorAll('input')
+
+openAdminPage.addEventListener('click', (event) => {
+    console.log(selectRoleAdmin)
+    selectRoleAdmin.forEach(e => {
+        if (e.checked) {
+            event.target.setAttribute("href", e.value)
+        }
+    })
+    // event.target.setAttribute("href", "admin-for-client.html");
+})

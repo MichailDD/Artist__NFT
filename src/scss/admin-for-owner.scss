@@ -1,0 +1,22 @@
+.header-admin {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 64px;
+    width: 100%;
+    padding: 17px 27px 17px 34px;
+    display: flex;
+    justify-content: space-between;
+
+    .exit {
+        margin-top: -1px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #C8D2DC;
+    }
+}
