@@ -1,22 +1,51 @@
-.header-admin {
-    margin: 0 auto;
+.admin-for-owner {
     max-width: 1280px;
-    min-height: 64px;
     width: 100%;
-    padding: 17px 27px 17px 34px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 
-    .exit {
-        margin-top: -1px;
+    .aside-admin {
+        width: 245px;
+        height: calc(100vh - 64px);
         display: flex;
-        align-items: center;
-        gap: 8px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        color: #C8D2DC;
+        flex-direction: column;
+        justify-content: space-between;
+
+        nav {
+            padding: 35px 37px;
+
+            ul {
+                li {
+                    margin-bottom: 24px;
+
+                    a {
+                        display: flex;
+                        gap: 11px;
+
+                        p {
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        background: #212426;
+        border-radius: 32px 0px 0px 0px;
+        width: calc(100% - 245px);
+        height: calc(100vh - 64px);
+
+        .message {
+            width: 100%;
+            height: 100%;
+        }
+
+        .orders,
+        .orders-nft,
+        .workers {
+            display: none;
+        }
     }
 }

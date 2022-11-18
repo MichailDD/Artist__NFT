@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"Admin For Owner"
+"title":"For Owner"
 })
 
 <body>
-    <header class="header-admin">
-        <a href="index.html">
-            <img src="img/logo.svg" alt="">
-        </a>
-        <a href="authorization.html" class="exit">
-            <p>Log out</p>
-            <div><img src="img/admin/white-exit-logo.svg" alt=""></div>
-        </a>
-    </header>
+    @@include('html/admin-components/_admin-header.html',{})
     <main class="admin-for-owner">
-        <div class="container"></div>
+        <aside class="aside-admin">
+            <nav>
+                <ul class="admin-nav">
+                    <li><a onclick="event.preventDefault()" href="0"><img class="admin-nav-js" src="img/admin/Message-icon.svg" alt="">
+                            <p class="admin-nav-js">Messages</p>
+                        </a></li>
+                    <li><a onclick="event.preventDefault()" href="1"><img class="admin-nav-js" src="img/admin/Bag-icon.svg" alt="">
+                            <p class="admin-nav-js">Orders</p>
+                        </a></li>
+                    <li><a onclick="event.preventDefault()" href="2"><img class="admin-nav-js" src="img/admin/Activity-icon.svg" alt="">
+                            <p class="admin-nav-js">NFT Orders</p>
+                        </a></li>
+                    <li><a onclick="event.preventDefault()" href="3"><img class="admin-nav-js" src="img/admin/workers-icon.svg" alt="">
+                            <p class="admin-nav-js">Workers</p>
+                        </a></li>
+                </ul>
+            </nav>
+            @@include('html/admin-components/_exit-block.html',{})
+        </aside>
+        <div class="container admin-container">
+            <div class="message">
+                @@include('html/admin-components/_messanger.html',{})
+            </div>
+            <div class="orders">
+                Orders
+            </div>
+            <div class="orders-nft">
+                Orders-nft
+            </div>
+            <div class="workers">
+                Workers
+            </div>
+        </div>
     </main>
     <script>
     </script>
