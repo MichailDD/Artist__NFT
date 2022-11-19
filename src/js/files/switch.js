@@ -43,11 +43,27 @@ if (switch_container) {
     const selectRoleAdmin = document.querySelector('.select-role-admin').querySelectorAll('input')
 
     openAdminPage.addEventListener('click', (event) => {
-        console.log(selectRoleAdmin)
         selectRoleAdmin.forEach(e => {
             if (e.checked) {
                 event.target.setAttribute("href", e.value)
             }
         })
+    })
+}
+
+const messagerSwiper = document.querySelector('.messagerSwiper')
+
+if (messagerSwiper) {
+    var swiper123 = new Swiper(".messagerSwiper", {
+        loop: true,
+        spaceBetween: 28,
+        breakpoints: {
+            0: {
+                slidesPerView: 4.4,
+            },
+            500: {
+                slidesPerView: 'auto',
+            },
+        }
     })
 }

@@ -1,8 +1,10 @@
-.admin-for-owner {
+.admin-for-everyone {
+    transition: 0.5s all ease-in-out;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     display: flex;
+    position: relative;
 
     .aside-admin {
         width: 245px;
@@ -10,6 +12,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+
+        @media(max-width:950px) {
+            display: none;
+        }
 
         nav {
             padding: 35px 37px;
@@ -24,6 +31,29 @@
 
                         p {
                             margin-top: 2px;
+                            color: #C8D2DC;
+                        }
+
+                        .img-active {
+                            display: none;
+                        }
+
+                        .img-unactive {
+                            display: block;
+                        }
+                    }
+
+                    .active {
+                        p {
+                            color: #FCFFFF;
+                        }
+
+                        .img-active {
+                            display: block;
+                        }
+
+                        .img-unactive {
+                            display: none;
                         }
                     }
                 }
@@ -37,6 +67,11 @@
         width: calc(100% - 245px);
         height: calc(100vh - 64px);
 
+        @media(max-width:950px) {
+            width: 100%;
+            background: none;
+        }
+
         .message {
             width: 100%;
             height: 100%;
@@ -44,8 +79,78 @@
 
         .orders,
         .orders-nft,
-        .workers {
+        .workers,
+        .statistics {
             display: none;
         }
     }
+}
+
+.modal-menu-admin {
+    display: none;
+    top: 65px;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    padding: 2px 15px 13px;
+    background: #1D1F21;
+    z-index: 100000;
+    filter: none;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+
+    @media(max-width:950px) {
+        display: block;
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    padding: 15px 0px 13px;
+                    display: flex;
+                    gap: 11px;
+                    border-bottom: 2px solid #293038;
+
+                    p {
+                        margin-top: 2px;
+                    }
+                }
+
+                .active {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 22px;
+                        right: 2px;
+                        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .exit-menu {
+                    gap: 8px;
+                    border-bottom: none;
+
+                    p {
+                        margin-top: 1px;
+                        font-family: 'Manrope';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #C8D2DC;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-menu-admin-open {
+    opacity: 1;
+    transform: translate3d(100%, 0px, 0px)
 }

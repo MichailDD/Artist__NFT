@@ -6,6 +6,11 @@
     padding: 17px 27px 17px 34px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    @media(max-width:950px) {
+        padding: 17px 15px 17px 23px;
+    }
 
     .exit {
         margin-top: -1px;
@@ -18,5 +23,22 @@
         font-size: 14px;
         line-height: 19px;
         color: #C8D2DC;
+
+        @media(max-width:950px) {
+            display: none;
+        }
     }
+
+    .admin-menu-icon {
+        margin-top: -1px;
+        display: none;
+
+        @media(max-width:950px) {
+            display: block;
+        }
+    }
+}
+
+.myClass-blur {
+    filter: blur(1.5px);
 }
