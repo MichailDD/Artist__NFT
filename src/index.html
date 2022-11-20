@@ -8,12 +8,12 @@
 			@@include('html/_header.htm',{})
 			<main class="page">
 				<section class="inspire">
-					 <img class="inspire__blur" src="@img/inspire/blur.png" alt="blur">
-					<!--<img class="inspire__deco1" src="@img/inspire/text.svg" alt="text decor">
+					 <img class="inspire__blur"  src="@img/inspire/blur.png" alt="blur">
+					<img class="inspire__deco1" src="@img/inspire/text.svg" alt="text decor">
 					<img class="inspire__deco2"   src="@img/inspire/text01.svg" alt="text decor">
 					<div class="inspire__circle"></div>
-					.<div class="inspire__circle-small"></div> -->
-					<!-- <img src="@img/inspire/icon01.svg" alt=""> -->
+					<div class="inspire__circle-small"></div>
+					<img class="inspire__star" data-prlx-mouse data-prlx-cx="10" src="@img/inspire/icon01.svg" alt="">
 					<div class="inspire__container">
 						<div class="inspire__content">
 							<div class="inspire__left">
@@ -32,23 +32,267 @@
 									</a>
 								</div>
 								<div class="inspire__text">
-									<h1 class="inspire__title">We are here to inspire and <br> share art</h1>
+									<h1 class="inspire__title">We are here to <br> inspire and <br> share art</h1>
 									<h3 class="inspire__subtitle">Indulgence announcing uncommonly <br> met she continuing two unpleasing <br> terminated</h3>
 								</div>
 								<div class="inspire__actions">
-									<button type="button " class="button-bg inspire__btn-bg"><img src="@img/inspire/crown.svg" alt=""> Premium access</button>
-									<button type="button" class="button inspire__btn"><h3>Discover</h3></button>
+									<button type="button" class="button-bg inspire__btn-bg "><img src="@img/inspire/crown.svg" alt=""> Premium access</button>
+									<button type="button" class="button  inspire__btn"><h3>Discover</h3></button>
 								</div>
 							</div>
 							<div class="inspire__hero hero">
 								<div class="hero__bg"></div>
-								<div class="hero__image">
-									<img src="@img/inspire/artist.png" alt="">
+								<picture class="hero__image">
+									<source srcset="img/inspire/artist-mob.png" media="(max-width:375px)">
+									<img src="@img/inspire/artist.png" alt="Cristine Pechen">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="biography">
+					<img data-prlx-mouse data-prlx-cy="10" class="biography__icon" src="@img/inspire/icon01.svg" alt="star">
+					<div class="biography__circle"></div>
+					<img  class="biography__blur" src="@img/biography/blur.png" alt="blur">
+					<div class="biography__container">
+						<div class="biography__content">
+							<div class="biography__hero">
+								<picture class="biography__picture" >
+									<source srcset="img/biography/artist-mob.png" media="(max-width:375px)" >
+									<img class="biography__image" src="@img/biography/artist.png" alt="Cristine Pechen">
+								</picture>
+							</div>
+							<div class="biography__information">
+								<div class="biography__header">
+									<h3 class="biography__biography">BIOGRAPHY</h3>
+									<h3 class="biography__name">Perchen Arts. Biography</h3>
+								</div>
+								<div class="biography__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br class="br"> tempor incididunt ut labore et dolore magna aliqua. <br >
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br class="br"> aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br class="br">  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br class="br"> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br class="nobr"> anim <br class="br"> id est laborum. <br >
+										Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie <br class="br"> at. Diam in arcu curcus euismod quis viverra nibh cras. In ante metus dictum  <br class="nobr">   at tempor commodo ullamcorper. Ultrices eros in curcus turpis massa.</p>
+								</div>
+								<div class="biography__slider swiper">
+									<div class="biography__wrapper swiper-wrapper">
+										<div class="biography__slide swiper-slide">
+											<div class="biography__card">
+												<div class="biography__data">2007</div>
+												<div class="biography__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+											</div>
+										</div>
+										<div class="biography__slide swiper-slide">
+											<div class="biography__card">
+												<div class="biography__data">2014</div>
+												<div class="biography__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+											</div>
+										</div>
+										<div class="biography__slide swiper-slide">
+											<div class="biography__card">
+												<div class="biography__data">2019</div>
+												<div class="biography__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+											</div>
+										</div>
+										<div class="biography__slide swiper-slide">
+											<div class="biography__card">
+												<div class="biography__data">2007</div>
+												<div class="biography__info">Lorem ipsum dolor <br class="nobr"> sit amet, consectetur adipiscing elit</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+				<section class="premium">
+					<div class="premium__container">
+						<div class="premium__content">
+							<div class="premium__information">
+								<img class="premium__icon"  src="@img/premium/Crown.svg" alt="crown">
+								<h3 class="premium__title">Get the premium access</h3>
+								<p class="premium__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br class="br"> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br class="br"> <br class="nobr">
+									Ut  enim ad minim veniam</p>
+									<button type="button" class="button-black premium__btn"><h3>Go to plans</h3></button>
+							</div>
+							
+								<img data-prlx-mouse data-prlx-cy="90" class="premium__decor1 " src="@img/premium/icon02.svg" alt="decor">
+								<img data-prlx-mouse data-prlx-cx="70"   class="premium__decor2" src="@img/premium/icon01.svg" alt="decor">
+								<img data-prlx-mouse data-prlx-cy="90"  class="premium__decor3" src="@img/premium/icon03.svg" alt="decor">
+								<picture>
+									<source  srcset="img/premium/elipse-mob.svg" media="(max-width:375px)" >
+									<img class="premium__decor4" src="@img/premium/elipse.svg" alt="">
+								</picture>
+							
+						</div>
+					</div>
+				</section>
+				<section class="picture">
+					<img class="picture__blur" src="@img/picture/blur.png" alt="blur">
+					<div class="picture__container">
+						<div class="picture__content">
+							<div class="picture__slider swiper">
+								<div class="picture__wrapper swiper-wrapper">
+									<div class="picture__slide swiper-slide">
+										<div class="picture__card">
+											<div class="picture__header">
+												<h3>NFT</h3>
+											</div>
+											<div class="picture__inner picture__inner-bg1">
+												<picture>
+													<source srcset="img/picture/pic01-mob.png" media="(max-width:375px)">
+													<img class="picture__img" src="@img/picture/pic01.png" alt="nft picture">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse01-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec01" src="@img/picture/elipse01.svg" alt="elipse decor">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse02-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec02" src="@img/picture/elipse02.svg" alt="elipse decor">
+												</picture>
+											</div>
+											<div class="picture__footer">
+												<div class="picture__desc">
+													<h3 class="picture__title">Title of picture or NFT</h3>
+													<h3 class="picture__subtitle">	Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ipsum dolor ipsum dolor</h3>
+												</div>
+												<div class="picture__actions">
+													<div class="picture__price">$100 322</div>
+													<button type="button" class="button-bg picture__btn">Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="picture__slide swiper-slide">
+										<div class="picture__card">
+											<div class="picture__header">
+												<h3>NFT</h3>
+											</div>
+											<div class="picture__inner picture__inner-bg2">
+												<picture>
+													<source srcset="img/picture/pic01-mob.png" media="(max-width:375px)">
+													<img class="picture__img" src="@img/picture/pic01.png" alt="nft picture">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse01-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec01" src="@img/picture/elipse01.svg" alt="elipse decor">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse02-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec02" src="@img/picture/elipse02.svg" alt="elipse decor">
+												</picture>
+											</div>
+											<div class="picture__footer">
+												<div class="picture__desc">
+													<h3 class="picture__title">Title of picture or NFT</h3>
+													<h3 class="picture__subtitle">	Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ipsum dolor ipsum dolor</h3>
+												</div>
+												<div class="picture__actions">
+													<div class="picture__price">$100 322</div>
+													<button type="button" class="button-bg picture__btn">Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="picture__slide swiper-slide">
+										<div class="picture__card">
+											<div class="picture__header">
+												<h3>NFT</h3>
+											</div>
+											<div class="picture__inner picture__inner-bg3">
+												<picture>
+													<source srcset="img/picture/pic01-mob.png" media="(max-width:375px)">
+													<img class="picture__img" src="@img/picture/pic01.png" alt="nft picture">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse01-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec01" src="@img/picture/elipse01.svg" alt="elipse decor">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse02-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec02" src="@img/picture/elipse02.svg" alt="elipse decor">
+												</picture>
+											</div>
+											<div class="picture__footer">
+												<div class="picture__desc">
+													<h3 class="picture__title">Title of picture or NFT</h3>
+													<h3 class="picture__subtitle">	Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ipsum dolor ipsum dolor</h3>
+												</div>
+												<div class="picture__actions">
+													<div class="picture__price">$100 322</div>
+													<button type="button" class="button-bg picture__btn">Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="picture__slide swiper-slide">
+										<div class="picture__card">
+											<div class="picture__header">
+												<h3>NFT</h3>
+											</div>
+											<div class="picture__inner picture__inner-bg1">
+												<picture>
+													<source srcset="img/picture/pic01-mob.png" media="(max-width:375px)">
+													<img class="picture__img" src="@img/picture/pic01.png" alt="nft picture">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse01-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec01" src="@img/picture/elipse01.svg" alt="elipse decor">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse02-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec02" src="@img/picture/elipse02.svg" alt="elipse decor">
+												</picture>
+											</div>
+											<div class="picture__footer">
+												<div class="picture__desc">
+													<h3 class="picture__title">Title of picture or NFT</h3>
+													<h3 class="picture__subtitle">	Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ipsum dolor ipsum dolor</h3>
+												</div>
+												<div class="picture__actions">
+													<div class="picture__price">$100 322</div>
+													<button type="button" class="button-bg picture__btn">Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="picture__slide swiper-slide">
+										<div class="picture__card">
+											<div class="picture__header">
+												<h3>NFT</h3>
+											</div>
+											<div class="picture__inner picture__inner-bg2">
+												<picture>
+													<source srcset="img/picture/pic01-mob.png" media="(max-width:375px)">
+													<img class="picture__img" src="@img/picture/pic01.png" alt="nft picture">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse01-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec01" src="@img/picture/elipse01.svg" alt="elipse decor">
+												</picture>
+												<picture>
+													<source srcset="img/picture/elipse02-mob.svg" media="(max-width:375px)">
+													<img class="picture__dec02" src="@img/picture/elipse02.svg" alt="elipse decor">
+												</picture>
+											</div>
+											<div class="picture__footer">
+												<div class="picture__desc">
+													<h3 class="picture__title">Title of picture or NFT</h3>
+													<h3 class="picture__subtitle">	Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ipsum dolor ipsum dolor</h3>
+												</div>
+												<div class="picture__actions">
+													<div class="picture__price">$100 322</div>
+													<button type="button" class="button-bg picture__btn">Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

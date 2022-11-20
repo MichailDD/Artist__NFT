@@ -1,7 +1,6 @@
 // Заголовки, общие БЄМ блоки и проче...
 .button {
 	display: inline-flex;
-	
 	color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -9,6 +8,27 @@
 	text-fill-color: transparent;
 	background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
 	border-radius: rem(12);
+	h3{
+		background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+	
+	@media (any-hover: hover) {
+		&:hover {
+			
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+.button-black {
+	display: inline-flex;
+	background-color: #1D1F21;
+	border-radius: rem(16);
 	h3{
 		background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
 		-webkit-background-clip: text;

@@ -1,5 +1,7 @@
 body{
     background-color: #1D1F21;
+    position: relative;
+    
 }
 .inspire {
     position: relative;
@@ -7,28 +9,76 @@ body{
 
     &__blur {
         position: absolute;
-        top: 0;
+        top: rem(-50);
         left: 0;
+        @media (max-width:$mobile){
+            
+        }
     }
 
     // .inspire__deco1
 
     &__deco1 {
+        position: absolute;
+        top: rem(26);
+        left: 0;
+        @media (max-width:$mobile){
+             width: rem(241); 
+             height: rem(61);
+             top: rem(2);
+             left: rem(195);
+        }
     }
 
     // .inspire__deco2
 
     &__deco2 {
+        position: absolute;
+        @include adaptiveValue("top",623 ,300 );
+        @include adaptiveValue("left",487 ,250 );
+        @media (max-width:$mobile){
+             display: none; 
+
+        }
     }
 
     // .inspire__circle
-
+    &__star{
+        position: absolute;
+        top: rem(50);
+        @include adaptiveValue("left",737 ,0 );
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
     &__circle {
+        position: absolute;
+        border: rem(1) solid #FCFFFF;
+        width: rem(25);
+        height: rem(25);
+        border-radius: 50%;
+        top: rem(219);
+        opacity: 0.4;
+        @include adaptiveValue("left",763 ,20 );
+        @media (max-width:$mobile){
+             display: none; 
+        }
     }
 
     // .inspire__circle-small
 
     &__circle-small {
+        opacity: 0.4;
+        position: absolute;
+        border: rem(1) solid #FCFFFF;
+        width: rem(10);
+        height: rem(10);
+        top: rem(40);
+        right: rem(170);
+        border-radius: 50%;
+        @media (max-width:$mobile){
+             display: none; 
+        }
     }
 
     // .inspire__container
@@ -40,17 +90,32 @@ body{
     // .inspire__content
 
     &__content {
-        display: flex;
+       display: flex;
+       @media (max-width:$mobile){
+         flex-direction: column; 
+       }
     }
 
     // .inspire__left
 
     &__left {
+        padding-top: rem(131);
+        padding-left: rem(15);
+        position: relative;
+        @media (max-width:$mobile){
+             padding-top: rem(30); 
+        }
     }
 
     // .inspire__social
 
     &__social {
+        display: flex;
+        gap: rem(21.5);
+        align-items: center;
+        @media (max-width:$mobile){
+             display: none; 
+        }
     }
 
     // .inspire__link
@@ -71,41 +136,93 @@ body{
         font-weight: 700;
         font-size: rem(64);
         line-height: rem(65);
+        padding-top: rem(30);
+        @media (max-width:$mobile){
+            font-weight: 700;
+            font-size: rem(36);
+            line-height: rem(40); 
+        }
     }
 
     // .inspire__subtitle
 
     &__subtitle {
+        padding-top: rem(14);
         font-style: normal;
         font-weight: 400;
         font-size: rem(16);
         line-height: rem(28);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24); 
+            padding-top: rem(8);
+        }
     }
 
     // .inspire__actions
 
     &__actions {
+        display: flex;
+        gap: rem(12);
+        margin-top: rem(40);
+        @media (max-width:$mobile){
+             margin-top: rem(22); 
+        }
+        
     }
 
     // .inspire__btn-bg
 
     &__btn-bg {
+        display: flex;
+        gap: rem(10);
+        align-items: center;
+        padding: rem(18) rem(22) rem(19) rem(24);
+        font-weight: 700;
+        font-size: rem(18);
+        line-height: rem(26);
+        border-radius: rem(16);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(26); 
+            border-radius: rem(12);
+            padding: rem(12) rem(17) rem(13) rem(16);
+            img{
+                width: rem(17);
+                height: rem(12);
+            }
+        }
     }
 
     // .inspire__btn
 
     &__btn {
+        padding: rem(18) rem(36) rem(19) rem(37);
+        border-radius: rem(16);
+        color: #1D1F21;
+        h3{
+            font-weight: 700;
+            font-size: rem(18);
+            line-height: rem(26);
+        }
+        @media (max-width:$mobile){
+            padding: rem(12) rem(28) rem(13) rem(29);
+              h3{
+                font-size: rem(15);
+            line-height: rem(26); 
+            border-radius: rem(12);
+            
+              }
+        }
     }
 
     // .inspire__hero
 
     &__hero {
+       
     }
 }
-.button-bg {
-}
-.button {
-}
+
 .hero {
 
     // .hero__bg
@@ -121,16 +238,588 @@ body{
         @media (max-width:$mobile){
              width: rem(345);
              height: rem(306); 
+             top: rem(410);
+             left: rem(15);
         }
     }
 
     // .hero__image
 
     &__image {
-        position: relative;
+       
        img{
-        z-index: 5;
+        z-index: 5; 
+        position: absolute;
+        padding-top: rem(50);
+      @include adaptiveValue("left",552 ,0 );
+      @media (max-width:$mobile){
+         top: rem(250);
+         
+      }
+
        }
         
     }
 }
+.biography {
+    position: relative;
+    
+    // .biography__container
+
+    &__container {
+        @include adaptiveValue("padding-top",215 ,500 );
+        padding-left: rem(3);
+        @media (max-width:$mobile){
+             padding-top: rem(380);
+             padding-left: rem(15);
+        }
+    }
+    &__blur{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    // .biography__content
+
+    &__content {
+        display: flex;
+        gap: rem(64);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+        }
+    }
+
+    // .biography__hero
+
+    &__hero {
+    }
+
+    // .biography__picture
+
+    &__picture {
+        position: relative;
+        z-index: 5;
+        @media (max-width:$mobile){
+             position: absolute;
+             top: rem(525);
+             padding-left: rem(5);
+        }
+    }
+
+    // .biography__information
+
+    &__information {
+        padding-top: rem(45);
+        @media (max-width:$mobile){
+             padding-top: rem(0); 
+        }
+    }
+
+    // .biography__header
+
+    &__header {
+    }
+
+    // .biography__biography
+
+    &__biography {
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 700;
+        font-size: rem(18);
+        line-height: rem(26);
+        letter-spacing: 0.1em;
+        @media (max-width:$mobile){
+            font-size: rem(14);
+           
+        }
+    }
+
+    // .biography__name
+
+    &__name {
+        font-weight: 700;
+        font-size: rem(36);
+        line-height: rem(50);
+        @media (max-width:$mobile){
+            font-size: rem(26);
+            line-height: rem(34); 
+        }
+    }
+
+    // .biography__text
+
+    &__text {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        padding-top: rem(17);
+        
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24);
+            padding-top: rem(407);
+          
+        }
+    }
+
+    // .biography__slider
+
+    &__slider {
+        width: rem(536);
+        padding-top: rem(42);
+        @media (max-width:$mobile){
+             width: rem(440); 
+             padding-top: rem(32);
+        }
+    }
+
+    // .biography__wrapper
+
+    &__wrapper {
+       
+    }
+
+    // .biography__slide
+
+    &__slide {
+    }
+
+    // .biography__card
+
+    &__card {
+    }
+    &__icon{
+        position: absolute;
+        @include adaptiveValue("top",366 ,20 );
+        @include adaptiveValue("left",77 ,25 );
+    }
+    &__circle{
+        position: absolute;
+        width: rem(25);
+        border-radius: 50%;
+        height: rem(25);
+        opacity: 0.4;
+        border: 1px solid #FCFFFF;
+        @include adaptiveValue("top",532 ,0 );
+        @include adaptiveValue("left", 102, 0);
+    }
+    // .biography__data
+
+    &__data {
+        background: rgba(197, 255, 152, 0.1);
+        border-radius: rem(10);
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: rem(20);
+        color: #C5FF98;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: rem(60);
+        height: rem(32);
+        @media (max-width:$mobile){
+            width: rem(60);
+            height: rem(29);
+        }
+    }
+
+    // .biography__info
+
+    &__info {
+        font-weight: 600;
+        font-size: rem(16);
+        line-height: rem(28);
+        padding-top: rem(8);
+        @media (max-width:$mobile){
+            font-size: rem(14);
+            line-height: rem(24); 
+            padding-top: rem(15);
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.br{
+    @media (max-width:$mobile){
+         display: none; 
+    }
+}
+.nobr{
+   @media (max-width: em(1440)){
+      display: none;
+   }
+    @media (max-width:$mobile){
+         display: block; 
+    }
+}
+//////////////////////////////////////////////////////////
+.premium {
+    
+padding-top: rem(65);
+position: relative;
+@media (max-width:$mobile){
+     padding-top: rem(30); 
+}
+
+    // .premium__container
+
+    &__container {
+        @media (max-width:$mobile){
+             padding-left: rem(15); 
+        }
+       
+    }
+
+    // .premium__content
+
+    &__content {
+        @include adaptiveValue("width",1140 ,345 );
+        @include adaptiveValue("height",446 ,514 );
+        background: linear-gradient(94.78deg, #6880FF 9.27%, #3CA7F4 50.77%, #8C45FF 84.06%);
+        border-radius: rem(24);
+        display: flex;
+        position: relative;
+        @media (max-width:$mobile){
+            background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%); 
+        }
+        
+      
+    }
+
+    // .premium__information
+
+    &__information {
+      @include adaptiveValue("padding-top",83 ,32 );
+      @include adaptiveValue("padding-left",110 ,25 );
+    }
+    &__icon{
+       @media (max-width:$mobile){
+         width: rem(24);
+         height: rem(24); 
+       }
+    }
+
+    // .premium__title
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(36);
+        line-height: rem(50);
+        padding-top: rem(12);
+        @media (max-width:$mobile){
+            font-size: rem(26);
+            line-height: rem(34); 
+            padding-top: rem(5);
+        }
+    }
+
+    // .premium__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        padding-top: rem(12);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24); 
+            padding-top: rem(8);
+        }
+    }
+
+    // .premium__btn
+
+    &__btn {
+        margin-top: rem(12);
+        background-color: #1D1F21;
+        padding: rem(18) rem(37) rem(19) rem(37);
+        @media (max-width:$mobile){
+             padding: rem(12) rem(29) rem(13) rem(29); 
+             margin-top: rem(24);
+             border-radius:rem(12);
+        }
+        
+        h3{
+            font-weight: 700;
+            font-size: rem(18);
+            line-height: rem(26);
+            @media (max-width:$mobile){
+                font-weight: 700;
+                font-size: rem(15);
+                
+            }
+        }
+    }
+
+    // .premium__decor
+
+    &__decor {
+        
+       
+    }
+
+    // .premium__decor1
+
+    &__decor1 {
+        position: absolute;
+       z-index: 3;
+        right: rem(350);
+        @media (max-width:$mobile){
+           top: rem(410);
+           left: rem(-20); 
+           rotate: (50deg);
+           width: rem(145);
+           height: rem(95);
+       }
+    }
+
+    // .premium__decor2
+
+    &__decor2 {
+        position: absolute;
+        top: rem(78);
+        right: rem(90);
+        z-index: 3;
+        @media (max-width:$mobile){
+             width: rem(250);
+             height: rem(180); 
+             rotate: (-8deg);
+             top: rem(290);
+             right: rem(40);
+             
+             
+        }
+       
+    }
+
+    // .premium__decor3
+
+    &__decor3 {
+        position: absolute;
+        top: rem(200);
+        right: 0;
+        z-index: 3;
+        @media (max-width:$mobile){
+            top: rem(380);
+            right:0;
+            width: rem(163);
+            height: rem(140);
+       }
+    }
+    &__decor4{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media (max-width:$mobile){
+            top: rem(339);
+             right: rem(0);
+             
+        }
+    }
+  
+    // .premium__circle
+
+
+}
+.picture {
+position: relative;
+
+    // .picture__container
+    &__blur{
+        position: absolute;
+        top: rem(-200);
+        left: rem(50)
+        
+    }
+    &__container {
+    }
+
+    // .picture__content
+
+    &__content {
+        padding-left: rem(15);
+        padding-right: rem(15);
+    }
+
+    // .picture__slider
+
+    &__slider {
+       height: rem(631);
+       padding-top: rem(65);
+    }
+
+    // .picture__wrapper
+
+    &__wrapper {
+    }
+
+    // .picture__slide
+
+    &__slide {
+    }
+
+    // .picture__card
+
+    &__card {
+        @include adaptiveValue("width",350 ,280 );
+        @include adaptiveValue("height",600 ,448 );
+        border-radius: rem(12);
+        position: relative;
+        background-color: #212426;
+        @media (any-hover: hover){
+            &:hover{
+                transform: translateY(-40px);
+                z-index: 50;
+            }
+        }
+    }
+
+    // .picture__header
+
+    &__header {
+       
+        h3{
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-weight: 700;
+            font-size: rem(18);
+            padding-top: rem(17);
+            padding-left: rem(20);
+            padding-bottom: rem(18);
+            line-height: rem(26);
+            letter-spacing: 0.1em;
+
+        }
+    }
+
+    // .picture__inner
+
+    &__inner {
+        @include adaptiveValue("width",350 ,253 );
+        @include adaptiveValue("height",350 ,253 );
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding-top: rem(25);
+      
+        &-bg1{
+            background-color: #C5FF98;
+
+        }
+        &-bg2{
+            background: #86A8FF;
+        }
+        &-bg3{
+            background: #7E51FF;
+        }
+            
+    }
+
+    // .picture__img
+
+    &__img {
+    }
+
+    // .picture__dec01
+
+    &__dec01 {
+        position: absolute;
+        display: none;
+    }
+
+    // .picture__dec02
+
+    &__dec02 {
+        position: absolute;
+        display: none;
+    }
+
+    // .picture__footer
+
+    &__footer {
+        padding-top: rem(16);
+        padding-left: rem(25);
+        
+    }
+
+    // .picture__desc
+
+    &__desc {
+    }
+
+    // .picture__title
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(30);
+        @media (max-width:$mobile){
+            font-size: rem(18);
+            line-height: rem(26); 
+        }
+    }
+
+    // .picture__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+font-size: rem(14);
+line-height: rem(21);
+color: #C8D2DC;
+padding-top: rem(3);
+@media (max-width:$mobile){
+    font-size: rem(12);
+    line-height: rem(20);
+}
+    }
+
+    // .picture__actions
+
+    &__actions {
+        display: flex;
+        gap: rem(77);
+        align-items: center;
+        padding-top: rem(33);
+    }
+
+    // .picture__price
+
+    &__price {
+        font-weight: 700;
+        font-size: rem(26);
+        line-height: rem(34);
+    }
+
+    // .picture__btn
+
+    &__btn {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: rem(20);
+        padding: rem(14) rem(30);
+        border-radius: rem(12);
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.button-bg {
+}
+

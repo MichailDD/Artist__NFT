@@ -121,7 +121,7 @@
 		
 		@media (max-width:$mobile){
 			 display: block; 
-			 z-index: 5;
+			 z-index: 15;
 			 padding: rem(7);
 			 margin-right: rem(10);
 			 margin-right: rem(15);
@@ -154,6 +154,7 @@
 			 display: flex;
 			 flex-direction: column;
 			 align-items: center;
+			 z-index: 10;
 			}
 			.menu-open &{
 				left: 0;
@@ -252,7 +253,7 @@
 		position: relative;
 		width: rem(14);
 		height: rem(12);
-		z-index: 5;
+		z-index: 60;
 		
 		@media (any-hover: none) {
 			cursor: default;
