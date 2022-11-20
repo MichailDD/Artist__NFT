@@ -148,8 +148,13 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";		
+//admin компоненти
+@import "admin-components/_admin-header";		
+@import "admin-components/_exit-block";		
+@import "admin-components/messenger";		
 
 // Подключение стилей отдельных страниц
 @import "home";
 @import "index";
 @import "authorization";
+@import "admin-for-owner.scss";

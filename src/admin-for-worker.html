@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"For Worker"
+})
+
+<body>
+    @@include('html/admin-components/_admin-header.html',{})
+    <div class="modal-menu-admin">
+        <nav>
+            <ul>
+                <li>
+                    <a onclick="event.preventDefault()" class="active" href="#">
+                        <img src="../../img/admin/Message-icon.svg" alt="">
+                        <p>Messages</p>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="event.preventDefault()" href="#">
+                        <img src="img/admin/unactive-statistics.svg" alt="">
+                        <p>Statistics</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="exit-menu" href="authorization.html">
+                        <img src="../../img/admin/exit-unactive.svg" alt="">
+                        <p>Log out</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="admin-for-everyone">
+        <aside class="aside-admin">
+            <nav>
+                <ul class="admin-nav">
+                    <li><a class="active" onclick="event.preventDefault()" href="0">
+                            <img class="admin-nav-js img-active" src="img/admin/Message-icon.svg" alt="">
+                            <img class="admin-nav-js img-unactive" src="img/admin/message-unactive-icon.svg" alt="">
+                            <p class="admin-nav-js">Messages</p>
+                        </a></li>
+                    <li><a onclick="event.preventDefault()" href="1">
+                            <img class="admin-nav-js img-active" src="img/admin/active-statistics.svg" alt="">
+                            <img class="admin-nav-js img-unactive" src="img/admin/unactive-statistics.svg" alt="">
+                            <p class="admin-nav-js">Statistics</p>
+                        </a></li>
+                </ul>
+            </nav>
+            @@include('html/admin-components/_exit-block.html',{})
+        </aside>
+        <div class="container admin-container">
+            <div class="message">
+                @@include('html/admin-components/_messanger.html',{})
+            </div>
+            <div class="statistics">
+                Statistics
+            </div>
+        </div>
+    </main>
+    <script>
+        const adminMessageChat = document.querySelector('.admin-message-chat');
+        const adminChatBlock = document.querySelector('.admin-chat-block');
+        let media950 = window.matchMedia('(max-width: 960px)');
+
+        function openChat() {
+            return 0;
+        }
+        if (media950.matches) {
+            function openChat() {
+                adminMessageChat.style.display = "block";
+                adminChatBlock.style.display = "none";
+            }
+
+            function closeChat() {
+                adminMessageChat.style.display = "none";
+                adminChatBlock.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
