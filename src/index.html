@@ -292,7 +292,46 @@
 						</div>
 					</div>
 				</section>
-				
+				<section class="want">
+					<div class="contact">
+						<img data-prlx-mouse data-prlx-cy="40"   class="contact__decor01" src="@img/contact/icon01.svg" alt="decor">
+						<img  data-prlx-mouse data-prlx-cx="40"  class="contact__decor02"  src="@img/contact/icon02.png" alt="decor">
+						<img data-prlx-mouse data-prlx-cy="40" class="contact__decor03"  src="@img/contact/icon03.png" alt="decor">
+						<img data-prlx-mouse data-prlx-cx="40"	 class="contact__decor04"  src="@img/contact/icon.png" alt="decor">
+						<div class="contact__container">
+							<div class="contact__content">
+								<div class="contact__information">
+									<h3 class="contact__title">CONTACT ME</h3>
+									<h3 class="contact__subtitle">Want to apply your work <br class="nobr"> or an <br class="br"> question appeared? </h3>
+								</div>
+								<div class="contact__form want__form">
+									<form action="#" method="post" enctype="multipart/form-data">
+										<div class="contact__user">
+											<h3 class="contact__name">Name</h3>
+											<input class="contact__input"  autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="input">
+										</div>
+										<div class="contact__mail">
+											<h3 class="contact__name">Mail</h3>
+											<input class="contact__input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your mail" class="input">
+										</div>
+										<div class="contact__text">
+											<h3 class="contact__name">Your question</h3>
+											<textarea class="contact__question" placeholder="Your question"  cols="30" rows="10"></textarea>
+										</div>
+									</form>
+								</div>
+								<div class="contact__actions">
+									<button type="button" data-popup="#popup"  class="button-bg contact__btn">Send message</button>
+									
+									<div class="checkbox">
+										<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree with <span class="contact__span contact__span-1">Privacy Policy</span> and <span class="contact__span">Terms of use</span></span></span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

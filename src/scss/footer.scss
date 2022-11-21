@@ -1,3 +1,125 @@
 //====================================================================================================
+.footer {
+    background-color: #212426;
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__content
+
+    &__content {
+
+        
+    }
+
+    // .footer__header
+
+    &__header {
+        display: flex;
+        align-items: center;
+        padding-right: rem(27);
+        @media (max-width:$mobile){
+             gap: rem(22);
+             align-items: center;
+             padding-bottom: rem(20);
+        }
+        
+       
+    }
+    &__line{
+        border: 1px solid #FCFFFF;
+        opacity: 0.05;
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        padding-top: rem(17);
+        padding-bottom: rem(20);
+        gap: rem(21);
+        padding-left: rem(8);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+             padding-left: rem(0);
+             padding-top: rem(28);
+             padding-bottom: rem(0);
+        }
+        
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+
+    // .footer__list
+
+    &__list {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(21);
+        color: #C8D2DC;
+        opacity: 0.6;
+        padding-top: rem(5);
+        padding-right: rem(10);
+        @media (max-width:$mobile){
+             padding-right: rem(65); 
+             padding-top: rem(10);
+        }
+        
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        gap: rem(19);
+       @media (max-width:$mobile){
+         padding-bottom: rem(75); 
+       }
+    }
+
+    // .footer__link
+
+    &__link {
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        @media (max-width:$mobile){
+            background: #1D1F21;
+            border-radius: rem(8); 
+            width: rem(345);
+            margin: 0 auto;
+        }
+    }
+
+    // .footer__reserved
+
+    &__reserved {
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: rem(20);
+        color: #C8D2DC;
+        text-align: center;
+        padding-top: rem(9);
+        padding-bottom: rem(9);
+        @media (max-width:$mobile){
+            font-size: rem(14);
+            line-height: rem(21); 
+            padding-top: rem(14);
+            margin-bottom: rem(15);
+            padding-bottom: rem(14)
+        }
+
+    }
+}
 
 //====================================================================================================

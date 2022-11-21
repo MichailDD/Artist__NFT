@@ -501,6 +501,7 @@ position: relative;
     &__information {
       @include adaptiveValue("padding-top",83 ,32 );
       @include adaptiveValue("padding-left",110 ,25 );
+      position: relative;
     }
     &__icon{
        @media (max-width:$mobile){
@@ -638,7 +639,12 @@ position: relative;
     &__blur{
         position: absolute;
         top: rem(-200);
-        left: rem(50)
+        left: rem(50);
+        @media (max-width:$mobile){
+              top: rem(-500);
+              left: rem(-350);
+
+        }
         
     }
     &__container {
@@ -654,8 +660,13 @@ position: relative;
     // .picture__slider
 
     &__slider {
-       height: rem(631);
+      height: rem(670);
        padding-top: rem(65);
+       @media (max-width:$mobile){
+         padding-top: rem(25); 
+         width: rem(576);
+         height: rem(480);
+       }
     }
 
     // .picture__wrapper
@@ -676,10 +687,19 @@ position: relative;
         border-radius: rem(12);
         position: relative;
         background-color: #212426;
+        transition: transform 0.5s ease;
+        @media (max-width:$mobile){
+             padding-top: rem(13); 
+             padding-left: rem(13);
+             padding-right: rem(14);
+        }
         @media (any-hover: hover){
             &:hover{
-                transform: translateY(-40px);
-                z-index: 50;
+                transform: translateY(-31px);
+                @media (max-width:$mobile){
+                    transform: translateY(-13px);  
+                }
+                
             }
         }
     }
@@ -687,7 +707,9 @@ position: relative;
     // .picture__header
 
     &__header {
-       
+       @media (max-width:$mobile){
+         display: none; 
+       }
         h3{
             background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
             -webkit-background-clip: text;
@@ -715,6 +737,11 @@ position: relative;
         justify-content:center;
         align-items: center;
         padding-top: rem(25);
+        @media (max-width:$mobile){
+            border-radius: rem(12); 
+            padding-top: rem(19);
+        }
+    
       
         &-bg1{
             background-color: #C5FF98;
@@ -732,20 +759,30 @@ position: relative;
     // .picture__img
 
     &__img {
+        position: relative;
+        z-index: 2;
     }
 
     // .picture__dec01
 
     &__dec01 {
         position: absolute;
-        display: none;
+        top:rem(79);
+        left: 0;
+        @media (max-width:$mobile){
+             top: rem(57);
+        }
     }
 
     // .picture__dec02
 
     &__dec02 {
         position: absolute;
-        display: none;
+        top: rem(154);
+        left: 0;
+        @media (max-width:$mobile){
+             top:rem(111) 
+        }
     }
 
     // .picture__footer
@@ -753,6 +790,10 @@ position: relative;
     &__footer {
         padding-top: rem(16);
         padding-left: rem(25);
+        @media (max-width:$mobile){
+            padding-left: rem(0);
+            padding-top: rem(8);
+        }
         
     }
 
@@ -794,6 +835,10 @@ padding-top: rem(3);
         gap: rem(77);
         align-items: center;
         padding-top: rem(33);
+        @media (max-width:$mobile){
+             gap: rem(57); 
+             padding-top: rem(50);
+        }
     }
 
     // .picture__price
@@ -802,6 +847,10 @@ padding-top: rem(3);
         font-weight: 700;
         font-size: rem(26);
         line-height: rem(34);
+        @media (max-width:$mobile){
+            font-size: rem(22);
+             
+        }
     }
 
     // .picture__btn
@@ -812,14 +861,24 @@ padding-top: rem(3);
         line-height: rem(20);
         padding: rem(14) rem(30);
         border-radius: rem(12);
+        @media (max-width:$mobile){
+            border-radius: rem(8); 
+            padding: rem(10) rem(20);
+
+        }
     }
 }
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.button-bg {
+.want{
+    padding-top: rem(27);
+    @include adaptiveValue("padding-bottom",91 ,35 );
+    @media (max-width:$mobile){
+         
+    }
+    &__form{
+        padding-top: rem(22) ;
+        @media (max-width:$mobile){
+             padding-top: rem(0); 
+        }
+    }
 }
 

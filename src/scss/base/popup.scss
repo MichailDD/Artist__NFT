@@ -24,16 +24,26 @@ body::after {
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
+	
 }
 .popup_show {
 	z-index: 150;
 	visibility: visible;
 	overflow: auto;
 	pointer-events: auto;
+	
+	
 }
 .popup_show .popup__content {
 	visibility: visible;
 	transform: scale(1);
+	background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+	width: rem(450);
+
+	@media (max-width:$mobile){
+		 width: rem(350); 
+	}
+
 }
 .popup__wrapper {
 	display: flex;
@@ -57,5 +67,15 @@ body::after {
 	border-radius: 20px;
 	.lock & {
 		visibility: visible;
+	}
+}
+.popup__text{
+	font-weight: 700;
+	font-size: rem(36);
+	line-height: rem(50);
+	color: #1D1F21;;
+	@media (max-width:$mobile){
+		 font-size: rem(26); 
+		 line-height: rem(36);
 	}
 }
