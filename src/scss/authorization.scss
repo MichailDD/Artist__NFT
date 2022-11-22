@@ -304,10 +304,14 @@
                 font-family: 'ProximaNova';
                 font-weight: 700;
                 font-size: 18px;
-                line-height: 62px;
+                line-height: 26px;
                 color: #1D1F21;
                 text-align: center;
                 padding-bottom: 2px;
+
+                @media(max-width:768px) {
+                    line-height: 38px;
+                }
             }
         }
 
