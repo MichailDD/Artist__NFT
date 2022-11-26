@@ -60,6 +60,22 @@
 		width: 100%;
 	}
 }
+.title-bg{
+	background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+letter-spacing: 0.1em;
+}
+.title-color{
+	background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
 ///////////////////////////////////////////////////////////////////////////////
 .contact {
 position: relative;
