@@ -1,0 +1,199 @@
+.workers-table {
+    padding: 25px 12px 0px 12px;
+    width: 1018px;
+
+    tr {
+        width: 100%;
+    }
+
+    .titles {
+        display: flex;
+        padding-top: 1px;
+        margin-bottom: 2px;
+
+        th {
+            font-family: 'ProximaNova';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FCFFFF;
+            padding-bottom: 19px;
+        }
+
+        th:nth-child(1) {
+            padding-left: 16px;
+            padding-right: 97px;
+        }
+
+        th:nth-child(2) {
+            padding-right: 231px;
+        }
+
+        th:nth-child(3) {
+            padding-right: 380px;
+        }
+    }
+
+    .orders-item {
+        background: #1D1F21;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        border-radius: 14px;
+        margin-bottom: 8px;
+
+        td:nth-child(1) {
+            padding-left: 24px;
+            padding-right: 68px;
+            padding-top: 37px;
+            letter-spacing: 0.1px;
+        }
+
+
+        td:nth-child(2) {
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 39px;
+            padding-right: 77px;
+        }
+
+
+        td:nth-child(3) {
+            padding-top: 15px;
+            padding-right: 17px;
+            margin-right: 18px;
+            width: 420px;
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            span {
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #86A8FF;
+                font-weight: 700;
+            }
+        }
+
+        td:nth-child(4) {
+            padding-top: 25px;
+
+            button {
+                width: 116px;
+                height: 40px;
+                border-radius: 8px;
+                text-align: center;
+                padding-right: 1px;
+                background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                color: black;
+            }
+        }
+    }
+}
+
+.workers-list {
+    display: none;
+    padding: 16px 15px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .order-list__wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px 10px;
+    }
+
+    .orders-list__item {
+        width: 345px;
+        height: 248px;
+        background: #2C2F33;
+        border-radius: 14px;
+        padding: 19px 19px 17px 18px;
+        margin-bottom: 10px;
+
+        .item-header {
+            display: flex;
+            width: 100%;
+            margin-bottom: 14px;
+
+            h4 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 21px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        .item-line {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+        }
+
+        .item-info {
+            margin-top: 15px;
+
+            p {
+                font-family: 'ProximaNova';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            a {
+                font-family: 'ProximaNova';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #86A8FF;
+            }
+        }
+
+        .item-button {
+            margin-top: 18px;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            color: black;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .workers-table {
+        display: none;
+    }
+
+    .workers-list {
+        display: block;
+    }
+}

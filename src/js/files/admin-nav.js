@@ -24,9 +24,21 @@ if (adminMenuIcon) {
         modalMenuAdmin.classList.toggle('modal-menu-admin-open');
         if (modalMenuAdmin.classList.contains('modal-menu-admin-open')) {
             adminForOwner.classList.add('myClass-blur');
-        }
-        else {
+        } else {
             adminForOwner.classList.remove("myClass-blur");
         }
     })
 }
+
+const mobileNavRoute = document.querySelector('.mobile-nav-route');
+const mobileMenuTargetA = document.querySelector('.mobile-menu-target-a');
+
+mobileNavRoute.addEventListener('click', (e) => {
+    let currentMobilePage
+    // if (e.target.classList.contains('mobile-menu-target')) {
+    //     currentMobilePage = e.target.parentElement.getAttribute("href");
+    //     for(let i = 0;i<)
+    // } else {
+    //     console.log(false)
+    // }
+})

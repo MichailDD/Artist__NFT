@@ -85,7 +85,7 @@
             display: none;
             overflow: scroll;
 
-            @media (max-width:950px){
+            @media (max-width:950px) {
                 overflow: visible;
             }
 
@@ -132,18 +132,23 @@
         ul {
             li {
                 a {
-                    padding: 15px 0px 13px;
                     display: flex;
                     gap: 11px;
                     border-bottom: 2px solid #293038;
 
                     p {
+                        padding: 15px 0px 13px;
+                        color: #C8D2DC;
                         margin-top: 2px;
+                        width: 100%;
                     }
                 }
 
                 .active {
                     position: relative;
+                    p{
+                        color: white;
+                    }
 
                     &::after {
                         content: "";
@@ -159,7 +164,7 @@
 
                 .exit-menu {
                     gap: 8px;
-                    border-bottom: none;
+                    border-bottom: none!important;
 
                     p {
                         margin-top: 1px;
