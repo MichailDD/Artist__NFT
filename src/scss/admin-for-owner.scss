@@ -142,12 +142,29 @@
                         margin-top: 2px;
                         width: 100%;
                     }
+
+                    img:nth-child(1) {
+                        display: none;
+                    }
+
+                    img:nth-child(2) {
+                        display: block;
+                    }
                 }
 
                 .active {
                     position: relative;
-                    p{
+
+                    p {
                         color: white;
+                    }
+
+                    img:nth-child(1) {
+                        display: block;
+                    }
+
+                    img:nth-child(2) {
+                        display: none;
                     }
 
                     &::after {
@@ -164,7 +181,7 @@
 
                 .exit-menu {
                     gap: 8px;
-                    border-bottom: none!important;
+                    border-bottom: none !important;
 
                     p {
                         margin-top: 1px;

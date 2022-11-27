@@ -8,22 +8,24 @@
     @@include('html/admin-components/_admin-header.html',{})
     <div class="modal-menu-admin">
         <nav>
-            <ul>
+            <ul class="mobile-nav-route">
                 <li>
-                    <a onclick="event.preventDefault()" class="active" href="#">
-                        <img src="../../img/admin/Message-icon.svg" alt="">
-                        <p>Messages</p>
+                    <a onclick="event.preventDefault()" class="active mobile-menu-target-a" href="0">
+                        <img class="mobile-menu-target" src="../../img/admin/Message-icon.svg" alt="">
+                        <img class="mobile-menu-target" src="img/admin/message-unactive-icon.svg" alt="">
+                        <p class="mobile-menu-target">Messages</p>
                     </a>
                 </li>
                 <li>
-                    <a onclick="event.preventDefault()" href="#">
-                        <img src="../../img/admin/Bag-icon.svg" alt="">
-                        <p>Orders</p>
+                    <a onclick="event.preventDefault()" href="1" class="mobile-menu-target-a">
+                        <img class="mobile-menu-target" src="img/admin/active-bag.svg" alt="">
+                        <img class="mobile-menu-target" src="../../img/admin/Bag-icon.svg" alt="">
+                        <p class="mobile-menu-target">Orders</p>
                     </a>
                 </li>
                 <li>
                     <a class="exit-menu" href="authorization.html">
-                        <img src="../../img/admin/exit-unactive.svg" alt="">
+                        <img style="display: block;" src="../../img/admin/exit-unactive.svg" alt="">
                         <p>Log out</p>
                     </a>
                 </li>

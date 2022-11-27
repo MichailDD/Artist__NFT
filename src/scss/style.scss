@@ -149,12 +149,13 @@ body {
 @import "header";
 @import "footer";		
 //admin компоненти
-@import "admin-components/_admin-header";		
-@import "admin-components/_exit-block";		
+@import "admin-components/admin-header";		
+@import "admin-components/exit-block";		
 @import "admin-components/messenger";		
 @import "admin-components/nft-orders";		
 @import "admin-components/orders";		
 @import "admin-components/workers";		
+@import "admin-components/statistics";		
 
 // Подключение стилей отдельных страниц
 @import "home";
