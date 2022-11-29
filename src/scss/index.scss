@@ -27,6 +27,7 @@ body{
              height: rem(61);
              top: rem(2);
              left: rem(195);
+             
         }
     }
 
@@ -306,7 +307,11 @@ body{
              padding-left: rem(5);
         }
     }
-
+    &__icon{
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
     // .biography__information
 
     &__information {
@@ -407,6 +412,9 @@ body{
         border: 1px solid #FCFFFF;
         @include adaptiveValue("top",532 ,0 );
         @include adaptiveValue("left", 102, 0);
+        @media (max-width:$mobile){
+             display: none; 
+        }
     }
     // .biography__data
 
