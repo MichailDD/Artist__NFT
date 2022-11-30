@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+			<section class="pricing">
+                <div class="pricing__container">
+                    <div class="pricing__content">
+                        <div class="pricing__top">
+                            <h1 class="pricing__title">Get the premium <br class="br"> access</h1>
+                            <h3 class="pricing__subtitle">Indulgence announcing uncommonly met she continuing <br class="br">  two unpleasing terminated</h3>
+                        </div>
+                        <div class="pricing__bottom">
+                            <div class="pricing__swip">
+                                <div class="pricing__slider swiper">
+                                    <div class="pricing__wrapper swiper-wrapper">
+                                        <div class="pricing__slide swiper-slide"></div>
+                                        <div class="pricing__slide swiper-slide"></div>
+                                        <div class="pricing__slide swiper-slide"></div>
+                                    </div>
+                                    <div class="swiper-pagination pricing__pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			</main>
+			<!-- @@include('html/_footer.htm',{}) -->
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
