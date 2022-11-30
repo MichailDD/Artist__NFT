@@ -108,6 +108,14 @@
                 background: rgba(0, 0, 0, 0);
             }
         }
+
+        .statistics {
+            .orders-list__title {
+                @media(max-width:950px) {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
