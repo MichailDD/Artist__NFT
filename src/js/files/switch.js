@@ -67,3 +67,16 @@ if (messagerSwiper) {
         }
     })
 }
+
+const paymentNavigation = document.querySelector('.payment-navigation');
+
+if (paymentNavigation) {
+    paymentNavigation.addEventListener('click', (e) => {
+        if (e.target.classList.contains('button-nav')) {
+            for(let i = 0; i<paymentNavigation.children.length;i++){
+                paymentNavigation.children[i].classList.remove('active');
+                e.target.classList.add('active');
+            }
+        }
+    })
+}
