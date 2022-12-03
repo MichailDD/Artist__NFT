@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Single Art"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header-second.html',{})
+        <main class="page single-art">
+            <div class="single-art-nav">
+                <div class="container">
+                    <a href="index.html">Main page</a>
+                    <img src="img/singleArt/arrow-left.svg" alt="">
+                    <a href="index.html">NFT</a>
+                    <img src="img/singleArt/arrow-left.svg" alt="">
+                    <a href="index.html">Name of product</a>
+                </div>
+            </div>
+            <section class="product">
+                <img class="product__blur" src="@img/titleCard/blur.png" alt="decor">
+                <div class="product__container">
+                    <div class="product__content">
+                        <div class="product__picture">
+                            <div class="product__card">
+                                <picture>
+                                    <source srcset="img/titleCard/dec01-mob.png" media="(max-width:375px)">
+                                    <img class="product__dec01" src="@img/titleCard/dec01.png" alt="decor-elipse">
+                                </picture>
+                                <picture>
+                                    <source srcset="img/titleCard/dec02-mob.png" media="(max-width:375px)">
+                                    <img class="product__dec02" src="@img/titleCard/dec02.png" alt="decor-elipse">
+                                </picture>
+                                <picture>
+                                    <source srcset="img/titleCard/pic01-mob.png" media="(max-width:375px)">
+                                    <img class="product__img" src="@img/titleCard/pic01.png" alt="NFT picture">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="product__information">
+                            <h3 class="product__nft title-bg">NFT</h3>
+                            <h1 class="product__title">Title of picture or NFT</h1>
+                            <p class="product__subtitle">Kindness to he horrible reserved ye. Effect twenty indeed
+                                beyond for not had county. The use him without greatly can private. Increasing it
+                                unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It
+                                dissimilar in up devonshire inhabiting. </p>
+                            <p class="product__subtitle product__subtitle-bottom ">
+                                If polite he active county in spirit
+                                an. Mrs ham intention promotion engrossed assurance
+                                defective. </p>
+                            <div class="product__buy">
+                                <div class="product__header">
+                                    <div class="product__price">$100 322</div>
+                                    <button type="button" class="button-bg product__btn"> <img class="product__icon"
+                                            src="@img/titleCard/icon01.svg" alt=""> Buy now</button>
+                                </div>
+                                <hr class="product__line">
+                                <div class="product__footer">
+                                    <p class="product__info">You can purchase Art or NFT using popular system of
+                                        payment. We accepting PayPal, Visa/Mastercard. Any crypto currency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="proccess">
+                <div class="proccess__container">
+                    <div class="proccess__content">
+                        <div class="proccess__top">
+                            <img src="@img/titleCard/icon02.svg" alt="icon decor">
+                            <h3 class="proccess__title title-bg">PROCCESS</h3>
+                        </div>
+                        <div class="proccess__bottom">
+                            <div class="play-img">
+                                <img src="img/singleArt/play.png" alt="">
+                            </div>
+                            <div class="bottom-block">
+                                <div class="logo">
+                                    <img src="img/singleArt/user-logo.png" alt="">
+                                    <span>Perchen Arts</span>
+                                </div>
+                                <div class="premium-content">
+                                    <img src="img/singleArt/crown.svg" alt="">
+                                    <p>premium content</p>
+                                </div>
+                                <div class="date">10/09/2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="me">
+                <div class="contact">
+                    <img data-prlx-mouse data-prlx-cy="40" class="contact__decor01" src="@img/contact/icon01.svg"
+                        alt="decor">
+                    <img data-prlx-mouse data-prlx-cx="40" class="contact__decor02" src="@img/contact/icon02.png"
+                        alt="decor">
+                    <img data-prlx-mouse data-prlx-cy="40" class="contact__decor03" src="@img/contact/icon03.png"
+                        alt="decor">
+                    <img data-prlx-mouse data-prlx-cx="40" class="contact__decor04" src="@img/contact/icon.png"
+                        alt="decor">
+                    <div class="contact__container">
+                        <div class="contact__content">
+                            <div class="contact__information">
+                                <h3 class="contact__title">CONTACT ME</h3>
+                                <h3 class="contact__subtitle">Want to apply your work <br class="nobr"> or an <br
+                                        class="br"> question appeared? </h3>
+                            </div>
+                            <div class="contact__form want__form">
+                                <form action="#" method="post" enctype="multipart/form-data">
+                                    <div class="contact__user">
+                                        <h3 class="contact__name">Name</h3>
+                                        <input class="contact__input" autocomplete="off" type="text" name="form[]"
+                                            data-error="Ошибка" placeholder="Your name" class="input">
+                                    </div>
+                                    <div class="contact__mail">
+                                        <h3 class="contact__name">Mail</h3>
+                                        <input class="contact__input" autocomplete="off" type="text" name="form[]"
+                                            data-error="Ошибка" placeholder="Your mail" class="input">
+                                    </div>
+                                    <div class="contact__text">
+                                        <h3 class="contact__name">Your question</h3>
+                                        <textarea class="contact__question" placeholder="Your question" cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contact__actions">
+                                <button type="button" data-popup="#popup" class="button-bg contact__btn">Send
+                                    message</button>
+
+                                <div class="checkbox">
+                                    <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree with
+                                            <span class="contact__span contact__span-1">Privacy Policy</span> and <span
+                                                class="contact__span">Terms of use</span></span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

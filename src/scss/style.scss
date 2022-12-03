@@ -147,6 +147,7 @@ body {
 
 // Подключение стилей отдельных блоков
 @import "header";
+@import "header-second.scss";
 @import "footer";		
 //admin компоненти
 @import "admin-components/admin-header";		
@@ -167,3 +168,4 @@ body {
 @import	"auction";
 @import "part";
 @import "pricing";
+@import "single-art.scss";

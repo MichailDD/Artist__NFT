@@ -1,0 +1,370 @@
+//====================================================================================================
+.header.header-second {
+
+	background-color: #1D1F21;
+	position: relative;
+	// .header__container
+
+	.header__container {
+		display: flex;
+		align-items: center;
+		padding-top: 8px;
+		padding-bottom: rem(17);
+		padding-left: rem(8);
+
+		@media (max-width:$mobile) {
+			padding-top: rem(15);
+			padding-left: rem(23);
+			padding-right: rem(5);
+
+		}
+	}
+
+	.header__items {
+
+		border-radius: rem(0) rem(0) rem(7) rem(7);
+		padding-left: rem(15);
+	}
+
+	// .header__logo
+
+	.header__logo {
+		z-index: 50;
+		margin-top: -7px;
+
+		@media(max-width:768px) {
+			margin-top: 0px;
+		}
+	}
+
+	.header__spoler {
+		display: flex;
+		align-items: center;
+		gap: rem(9);
+		width: rem(74);
+		height: rem(35);
+		background: #212426;
+		border-radius: rem(7);
+		justify-content: center;
+		transition: all 0.8s;
+		padding-bottom: rem(3);
+		padding-right: rem(4);
+		padding-top: rem(1);
+
+		@media (any-hover: hover) {
+			&:hover {
+				img {
+					transition: all 0.8s;
+					transform: rotate(180deg);
+
+				}
+			}
+		}
+	}
+
+	// .header__menu
+
+	.header__menu {
+		flex: 1 1 auto;
+		margin-top: -2px;
+		padding-left: 2.08rem;
+		z-index: 10;
+
+	}
+
+	// .header__actions
+
+	.header__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		margin-right: 15px;
+	}
+
+	// .header__language
+
+	.header__language {
+		margin-top: 2px;
+		margin-right: -1px;
+
+		@media (max-width:$mobile) {
+			display: none;
+		}
+	}
+
+	// .header__lang
+
+	.header__lang {}
+
+	// .header__buttons
+
+	.header__buttons {
+		display: flex;
+		gap: rem(8);
+		background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+		border-radius: 12px;
+
+		@media(max-width:768px) {
+			background: none;
+		}
+	}
+
+	// .header__btn
+
+	.header__btn {
+		font-style: normal;
+		font-weight: 700;
+		font-size: rem(14);
+		line-height: rem(20);
+		padding: rem(14) rem(22);
+
+		@media (max-width:$mobile) {
+			margin-top: rem(15);
+		}
+	}
+
+	// .header__btn-bg
+
+	.header__btn-bg {
+		padding: rem(14) rem(22);
+		font-style: normal;
+		font-weight: 700;
+		font-size: rem(14);
+		line-height: rem(20);
+		background-color: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		height: 48px;
+
+		@media (max-width:$mobile) {
+			display: none;
+		}
+
+	}
+
+	// .header__crown
+
+	.header__crown {
+		display: none;
+
+		@media (max-width:$mobile) {
+			display: block;
+			z-index: 15;
+			padding: rem(7);
+			margin-right: 0px;
+			width: 32px;
+			height: 32px;
+			margin-top: 1px;
+		}
+	}
+
+	.menu {
+
+		// .menu__icon
+
+		&__icon {
+			@media (max-width:$mobile) {
+				margin-right: rem(15);
+			}
+		}
+
+		// .menu__body
+
+		&__body {
+			@media (max-width:$mobile) {
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				transition: all 0.5s ease 0s;
+				overflow: auto;
+				background-color: #1D1F21;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				z-index: 10;
+			}
+
+			.menu-open & {
+				left: 0;
+				transition: all 0.5s ease 0s;
+			}
+		}
+
+		// .menu__list
+
+		&__list {
+			display: flex;
+			align-items: center;
+			// @include adaptiveValue("gap", 30, 16);
+			gap: 30px;
+
+			@media (max-width:$mobile) {
+				flex-direction: column;
+				padding-top: rem(70);
+
+			}
+		}
+
+		// .menu__item
+
+		&__item {
+			@media (max-width:$mobile) {}
+
+			&-img {
+				width: 50px;
+				height: 35px;
+				text-align: center;
+				padding: 8px 12px;
+				background: linear-gradient(94.78deg, rgba(104, 201, 255, 0.1) 9.27%, rgba(209, 181, 255, 0.1) 84.06%);
+				border-radius: 8px;
+				margin-left: -11px;
+				margin-right: -11px;
+
+				a {
+					background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					text-fill-color: transparent;
+					font-weight: 700;
+				}
+			}
+		}
+
+		// .menu__link
+
+		&__link {
+			font-family: 'Manrope';
+			font-style: normal;
+			font-weight: 400;
+			font-size: rem(14);
+			line-height: rem(19);
+			color: #C8D2DC;
+
+			@media (max-width:$mobile) {
+				font-size: rem(16);
+				line-height: rem(35);
+				display: block;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+				;
+			}
+		}
+	}
+
+	.spollers {
+
+		// .spollers__item
+
+		&__item {
+			margin-top: -4px;
+
+			button {
+				padding-top: 3px;
+				padding-right: 5px;
+			}
+
+		}
+
+		// .spollers__title
+
+		&__title {}
+
+		// .spollers__body
+
+		&__body {}
+	}
+
+	.spoler__style {
+		background: #212426;
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 400;
+		font-size: rem(14);
+		line-height: rem(19);
+		color: #C8D2DC;
+
+	}
+
+	//====================================================================================================
+
+	//Burger
+
+	.icon-menu {
+		display: none;
+
+		@media (max-width: $mobile) {
+			display: block;
+			position: relative;
+			width: rem(14);
+			height: rem(12);
+			z-index: 60;
+
+			@media (any-hover: none) {
+				cursor: default;
+			}
+
+			span,
+
+			&::before,
+			&::after {
+				content: "";
+				transition: all 0.3s ease 0s;
+				right: 0;
+				position: absolute;
+				width: 100%;
+				height: rem(2);
+				background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+
+
+			}
+
+			&::before {
+				top: -1px;
+				width: 7px;
+				border-radius: rem(12);
+			}
+
+			&::after {
+				bottom: -1px;
+				width: 11px;
+				border-radius: rem(12);
+			}
+
+			span {
+				top: calc(50% - rem(1));
+				border-radius: rem(12);
+				width: 15px;
+			}
+
+			.menu-open & {
+				span {
+					width: rem(8);
+
+				}
+
+				&::before,
+				&::after {}
+
+				&::before {
+					// top: calc(50% - rem(1));
+					// transform: rotate(-45deg);
+					width: rem(16);
+
+				}
+
+				&::after {
+					width: rem(12);
+				}
+			}
+		}
+	}
+}
