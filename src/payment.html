@@ -11,9 +11,9 @@
             <h2>PURCHASE</h2>
             <h1><span>Payment for</span> Name of NFT or art</h1>
             <div class="payment-navigation">
-                <div class="button-nav active">Credit card</div>
-                <div class="button-nav">PayPal</div>
-                <div class="button-nav">Crypto</div>
+                <div currentClick="0" class="button-nav active">Credit card</div>
+                <div currentClick="1" class="button-nav">PayPal</div>
+                <div currentClick="2" class="button-nav">Crypto</div>
             </div>
             <form class="credit-cart">
                 <label>Card number</label>
@@ -36,8 +36,20 @@
                     <p>I agree with <a href="#">Privacy Policy</a> and <a href="#">Terms of use</a></p>
                 </div>
             </form>
+            <form class="paypal-form">
+                Paypal
+            </form>
             <form class="cripto-form">
-                
+                <p>To purchase item by crypto you have to send money to this <br> wallet. After 5 minute result will
+                    sent in your mail</p>
+                <div class="copy">EQBSSl0Xlo3...kkHTmFw5YVYOiWJ. </div>
+                <label>E-mail</label>
+                <input type="text" placeholder="Your e-mail">
+                <button type="submit">Check</button>
+                <div class="agree">
+                    <input type="checkbox">
+                    <p>I agree with <a href="#">Privacy Policy</a> and <a href="#">Terms of use</a></p>
+                </div>
             </form>
         </div>
         <div class="payment-main__right">
@@ -71,7 +83,7 @@
                 <p>If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective.
                 </p>
             </div>
-        </div>
+        </div> 
     </main>
     @@include('html/_footer.htm',{})
     @@include('html/_js.htm',{})
