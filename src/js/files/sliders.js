@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation,Pagination,Scrollbar } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -104,6 +104,92 @@ function initSliders() {
 	// 		}
 	// 	});
 	// }
+		if (document.querySelector('.get__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		let menu = ['One week', 'Month', 'Year']
+		
+		new Swiper('.get__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation,Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 31,
+			autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			
+			pagination: {
+				el: '.get__pangination',
+				clickable: true,
+				type: 'bullets',
+				  renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menu[index]) + "</span>";
+          },	
+			},
+			
+
+			// Скроллбар
+			
+			scrollbar: {
+				el: '.get__scrollbar',
+				draggable: true,
+			},
+			
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+			
+			// Брейкпоинты
+			breakpoints: {
+				375:{
+					slidesPerView: 1,
+				},
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+			},
+			
+			// События
+			on: {
+
+			}
+		});
+	}
 	if (document.querySelector('.picture__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.picture__slider', { // Указываем скласс нужного слайдера
@@ -302,6 +388,6 @@ window.addEventListener("load", function (e) {
 	// Запуск инициализации слайдеров
 	initSliders();
 	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
-	//initSlidersScroll();
+	// initSlidersScroll();
 });
 

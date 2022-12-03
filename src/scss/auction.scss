@@ -1,0 +1,572 @@
+.auction {
+position: relative;
+    // .auction__deco01
+
+    &__deco01 {
+        position: absolute;
+        top: rem(-150);
+        left: rem(-550);
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+
+    // .auction__deco02
+
+    &__deco02 {
+         position: absolute;
+        top: rem(-150);
+        right: rem(-550);
+        @media (max-width:$mobile){
+            display: none; 
+       }
+    }
+
+    // .auction__container
+
+    &__container {
+    }
+
+    // .auction__content
+
+    &__content {
+        display: flex;
+        padding-top: rem(65);
+        padding-left: rem(15);
+        gap: rem(32);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+             padding-top: rem(80);
+             gap: rem(22);
+        }
+    }
+
+    // .auction__image
+
+    &__image {
+    }
+
+    // .auction__information
+
+    &__information {
+        padding-top: rem(9);
+        @media (max-width:$mobile){
+             padding-top: rem(0); 
+        }
+    }
+
+    // .auction__header
+
+    &__header {
+    }
+
+    // .auction__top
+
+    &__top {
+    }
+
+    // .auction__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        @media (max-width:$mobile){
+             font-size: rem(14); 
+        }
+    }
+
+    // .auction__subtitle
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: rem(36);
+        line-height: rem(50);
+        @media (max-width:$mobile){
+            font-size: rem(26);
+            line-height: rem(34); 
+            span{
+                display: none;
+            }
+        }
+    }
+
+    // .auction__bottom
+
+    &__bottom {
+        display: flex;
+        padding-top: rem(25);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+             padding-top: rem(13);
+        }
+    }
+    &__line{
+      @media (max-width:$mobile){
+        
+       
+      }
+
+    }
+
+    // .auction__blok
+
+    &__blok {
+        border-right: 1px solid #525960;
+        padding-right: rem(24);
+        @media (max-width:$mobile){
+             border-right: none; 
+             display: flex;
+             gap: rem(7);
+        }
+        &-2{
+            padding-left: rem(25);
+            @media (max-width:$mobile){
+                 display: flex;
+                 justify-content: space-between; 
+                 padding-left: rem(0);
+                 padding-top: rem(35);
+            }
+        }
+    }
+    &__blok1{
+        padding-left: rem(22);
+        @media (max-width:$mobile){
+             padding-left: rem(0); 
+             padding-top: rem(30);
+             @media (max-width:$mobile){
+                font-size: rem(15);
+                line-height: rem(24); 
+             }
+        }
+    }
+    // .auction__descr
+
+    &__descr {
+        font-weight: 400;
+        font-size:rem(16);
+        line-height:rem(28);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24); 
+        }
+    }
+
+    // .auction__price
+
+    &__price {
+        font-weight: 700;
+        font-size: rem(22);
+        line-height: rem(34);
+        padding-top: rem(2);
+        @media (max-width:$mobile){
+             font-size: rem(18);
+             line-height: rem(24); 
+             
+        }
+        
+    }
+    &__price1{
+        font-weight: 700;
+        font-size: rem(26);
+        line-height: rem(26);
+       @include adaptiveValue("padding-left",214 ,117 );
+       
+    }
+    // .auction__card
+
+    &__card {
+        position: relative;
+        @include adaptiveValue("width",540 ,345 );
+        @include adaptiveValue("height",318 ,434 );
+        background-color: #212426;
+        border-radius: rem(12);
+        @include adaptiveValue("margin-top",47 ,32 );
+    }
+
+    // .auction__highest
+
+    &__highest {
+    }
+
+    // .auction__decor
+
+    &__decor {
+        @include adaptiveValue("width",403 ,260 );
+        @include adaptiveValue("height",16 ,10 );
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: 0 0 rem(8) rem(8);
+        margin: 0 auto;
+    }
+
+    // .auction__name
+
+    &__name {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: rem(26);
+        text-align: center;
+        padding-top: rem(6);
+        @media (max-width:$mobile){
+             padding-top: rem(17); 
+        }
+    }
+
+    // .auction__place
+
+    &__place {
+        padding-top: rem(9);
+        @include adaptiveValue("padding-left",42 ,0 );
+        display: flex;
+        align-items: center;
+        gap: rem(12);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+             padding-top: rem(20);
+        }
+    }
+
+    // .auction__left
+
+    &__left {
+    }
+
+    // .auction__bid
+
+    &__bid {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: rem(21);
+        color: #C8D2DC;
+        @media (max-width:$mobile){
+              
+        }
+    }
+
+    // .auction__imput
+
+    &__imput {
+        @include adaptiveValue("width",266 ,313 );
+        height: rem(64);
+        background: #2C2F33;
+        border-radius: rem(9);
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(21);
+        color: #C8D2DC;
+        margin-top: rem(6);
+        padding-left: rem(32);
+    }
+
+    // .auction__actions
+
+    &__actions {
+    }
+
+    // .auction__btn
+
+    &__btn {
+        padding: rem(19) rem(51);
+        font-weight: 700;
+        font-size: rem(18);
+        line-height: rem(26);
+        margin-top: rem(27);
+        @media (max-width:$mobile){
+             font-size: rem(15); 
+             padding: rem(12) rem(125);
+             margin-top: rem(0);
+        }
+    }
+
+    // .auction__data
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: rem(24);
+    }
+
+    // .auction__time
+
+    &__time {
+        font-weight: 700;
+        font-size: rem(22);
+       
+        letter-spacing: rem(1.5);
+        @media (max-width:$mobile){
+            font-size: rem(18);
+            line-height: rem(24); 
+            letter-spacing: rem(1.1);
+        }
+    }
+
+    // .auction__live
+
+    &__live {
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: rem(24);
+        color: #C8D2DC;
+    }
+
+    // .auction__text
+
+    &__text {
+        font-weight: 400;
+        font-size:rem(12);
+        line-height: rem(20);
+        color: #C8D2DC;
+        padding-top: rem(15);
+        text-align: center;
+        @media (max-width:$mobile){
+             padding-top: rem(30); 
+        }
+        
+   }
+}
+
+//////////////////////////////////////////////////
+.liked {
+position: relative;
+    // .liked__container
+
+    &__container {
+        @include adaptiveValue("padding-top",32 ,20 );
+        padding-left: rem(15);
+        @include adaptiveValue("padding-bottom",56 ,32 );
+    }
+
+    // .liked__aboute
+
+    &__aboute {
+    }
+
+    // .liked__title
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: rem(24);
+        color: #C8D2DC;
+
+    }
+
+    // .liked__blok
+
+    &__blok {
+        @include adaptiveValue("width",540 ,345 );
+        background-color: #212426;
+        border-radius: rem(57);
+        height: rem(5);
+        margin-top: rem(10);
+        @media (max-width:$mobile){
+             margin-top: rem(2);
+             background-color: #2C2F33;
+        }
+    }
+
+    // .liked__blok-decor
+
+    &__blok-decor {
+        @include adaptiveValue("width",124 ,97 );
+            background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+            border-radius: rem(57);
+            height: rem(5);
+           
+    }
+
+    // .liked__content
+
+    &__content {
+        display: flex;
+        @include adaptiveValue("gap",50 ,0 );
+    @media (max-width:$mobile){
+         flex-direction: column; 
+
+    }
+        
+    }
+
+    // .liked__text
+
+    &__text {
+        @include adaptiveValue("width", 730,345 );
+        @include adaptiveValue("height",575 ,964 );
+        background-color: #212426;
+        border-radius: rem(12);
+        margin-top: rem(20);
+        padding: rem(30) rem(12) rem(0) rem(31);
+        @media (max-width:$mobile){
+             padding: rem(17) rem(12) rem(0) rem(16); 
+        }
+    }
+
+    // .liked__donated
+
+    &__donated {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        @media (max-width:$mobile){
+             gap: rem(12); 
+        }
+    }
+
+    // .liked__line
+
+    &__line {
+        width: rem(4);
+        height: rem(28);
+        background: linear-gradient(94.78deg, #68C9FF 9.27%, #D1B5FF 84.06%);
+        border-radius: rem(34);
+        @media (max-width:$mobile){
+             height: rem(34); 
+        }
+    }
+
+    // .liked__subtitle
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: rem(24);
+        @media (max-width:$mobile){
+             padding-right: rem(80); 
+           
+        }
+    }
+
+    // .liked__descr
+
+    &__descr {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        padding-top: rem(16);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24); 
+            padding-top: rem(7);
+        }
+    }
+
+    // .liked__descr-1
+
+    &__descr-1 {
+        padding-top: rem(27);
+        @media (max-width:$mobile){
+             padding-top: rem(23); 
+        }
+    }
+
+    // .liked__btn
+
+    &__btn {
+        display: none;
+        @media (max-width:$mobile){
+             display: inline-block; 
+             font-weight: 700;
+            font-size: rem(18);
+            line-height: rem(24);
+            padding: rem(8) rem(16);
+            border-radius: rem(6);
+            margin-top: rem(15);
+        }
+    }
+
+    // .liked__work
+
+    &__work {
+        width: rem(345);
+        @include adaptiveValue("height",514 ,368 );
+        background: linear-gradient(140.92deg, #6880FF 3.3%, #3CA7F4 52.35%, #8C45FF 92.15%);
+border-radius: rem(12);
+margin-top: rem(18);
+padding: rem(32) rem(0) rem(0) rem(26);
+position: relative;
+    }
+
+    // .liked__top
+
+    &__top {
+    }
+
+    // .liked__question
+
+    &__question {
+            font-weight: 700;
+            font-size: rem(26);
+            line-height: rem(34);
+            padding-top: rem(5);
+            @media (max-width:$mobile){
+                 padding-top: rem(4); 
+
+            }
+    }
+
+    // .liked__media
+
+    &__media {
+        font-weight: 400;
+        font-size: rem(15);
+        line-height: rem(24);
+        padding-top: rem(8);
+    }
+
+    // .liked__social
+
+    &__social {
+        display: flex;
+        gap: rem(22);
+        padding-top: rem(20);
+    }
+
+    // .liked__bottom
+
+    &__bottom {
+        
+    }
+
+    // .liked__img
+
+    &__img {
+    position: absolute;
+
+    }
+ &__img-1 {
+    
+    bottom: 0;
+    left: rem(0);
+    z-index: 5;
+    @media (max-width:$mobile){
+         
+    }
+    }
+    // .liked__img-2
+
+    &__img-2 {
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+    }
+
+    // .liked__img-3
+
+    &__img-3 {
+      bottom: rem(0);
+      left: 0;
+    }
+    &__image{
+       position: absolute;
+       bottom: 0;
+       right: rem(2);
+       z-index: 5;
+       @media (max-width:$mobile){
+         right: rem(50); 
+       }
+
+    }
+}
+.button {
+}
