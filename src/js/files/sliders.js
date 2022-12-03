@@ -190,6 +190,92 @@ function initSliders() {
 			}
 		});
 	}
+	if (document.querySelector('.feel__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		let menu = ['One week', 'Individual', 'Year']
+		
+		new Swiper('.feel__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation,Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 31,
+			autoHeight: true,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			
+			pagination: {
+				el: '.feel__pangination',
+				clickable: true,
+				type: 'bullets',
+				  renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (menu[index]) + "</span>";
+          },	
+			},
+			
+
+			// Скроллбар
+			
+			scrollbar: {
+				el: '.get__scrollbar',
+				draggable: true,
+			},
+			
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+			
+			// Брейкпоинты
+			breakpoints: {
+				375:{
+					slidesPerView: 1,
+				},
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+			},
+			
+			// События
+			on: {
+
+			}
+		});
+	}
 	if (document.querySelector('.picture__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.picture__slider', { // Указываем скласс нужного слайдера
