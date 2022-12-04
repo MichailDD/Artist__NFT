@@ -269,7 +269,9 @@ position: relative;
 }
 .individual{
     &__dec01{
-        display: none;
+        @media (max-width:$mobile){
+             display: none; 
+        }
     }
     padding-top: rem(67);
     padding-bottom: rem(117);
