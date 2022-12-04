@@ -152,7 +152,7 @@
             line-height: rem(21);
             text-align: center;
             display: none;
-            padding-top: rem(8);
+            padding-top: rem(2);
             @media (max-width:$mobile){
                 font-size: rem(11);
                 line-height: rem(18); 
@@ -167,18 +167,18 @@
             line-height: rem(34);
             text-align: center;
             display: none;
-            padding-top: rem(8);
+            padding-top: rem(17);
 		}
 
 		// .art__actions
 
 		&__actions {
             display: flex;
-            gap: rem(12);
+            gap: rem(15);
             align-items: center;
             display: none;
             justify-content: center;
-            @include adaptiveValue("margin-top",26 ,10 );
+            @include adaptiveValue("margin-top",24 ,10 );
 		}
 
 		// .art__item-bg
@@ -298,7 +298,7 @@
             display: flex;
             align-items: center;
             gap: rem(8);
-            padding: rem(18) rem(37) rem(19) rem(30);
+            padding: rem(19) rem(35) rem(19) rem(35);
             font-weight: 700;
             font-size: rem(18);
             line-height: rem(26);
