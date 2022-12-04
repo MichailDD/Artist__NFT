@@ -69,8 +69,6 @@ if (messagerSwiper) {
 }
 
 const paymentNavigation = document.querySelector('.payment-navigation');
-
-
 if (paymentNavigation) {
     const paymentForms = document.querySelector('.payment-main__left').querySelectorAll('form');
     paymentNavigation.addEventListener('click', (e) => {
