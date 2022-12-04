@@ -81,7 +81,40 @@
         .orders-nft,
         .workers,
         .statistics {
+            height: 100%;
             display: none;
+            overflow: scroll;
+
+            @media (max-width:950px) {
+                overflow: visible;
+            }
+
+            &::-webkit-scrollbar {
+                background: #212426;
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #676869;
+                border-radius: 15px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            &::-webkit-scrollbar-corner {
+                background: rgba(0, 0, 0, 0);
+            }
+        }
+
+        .statistics {
+            .orders-list__title {
+                @media(max-width:950px) {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -107,18 +140,40 @@
         ul {
             li {
                 a {
-                    padding: 15px 0px 13px;
                     display: flex;
                     gap: 11px;
                     border-bottom: 2px solid #293038;
 
                     p {
+                        padding: 15px 0px 13px;
+                        color: #C8D2DC;
                         margin-top: 2px;
+                        width: 100%;
+                    }
+
+                    img:nth-child(1) {
+                        display: none;
+                    }
+
+                    img:nth-child(2) {
+                        display: block;
                     }
                 }
 
                 .active {
                     position: relative;
+
+                    p {
+                        color: white;
+                    }
+
+                    img:nth-child(1) {
+                        display: block;
+                    }
+
+                    img:nth-child(2) {
+                        display: none;
+                    }
 
                     &::after {
                         content: "";
@@ -134,7 +189,7 @@
 
                 .exit-menu {
                     gap: 8px;
-                    border-bottom: none;
+                    border-bottom: none !important;
 
                     p {
                         margin-top: 1px;

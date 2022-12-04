@@ -1,4 +1,5 @@
 const adminNav = document.querySelector('.admin-nav');
+
 if (adminNav) {
     const adminContainer = document.querySelector('.admin-container')
     adminNav.addEventListener('click', (e) => {
@@ -24,9 +25,34 @@ if (adminMenuIcon) {
         modalMenuAdmin.classList.toggle('modal-menu-admin-open');
         if (modalMenuAdmin.classList.contains('modal-menu-admin-open')) {
             adminForOwner.classList.add('myClass-blur');
-        }
-        else {
+        } else {
             adminForOwner.classList.remove("myClass-blur");
         }
     })
 }
+
+const mobileNavRoute = document.querySelector('.mobile-nav-route');
+const mobileMenuTargetA = document.querySelectorAll('.mobile-menu-target-a');
+
+mobileNavRoute.addEventListener('click', (e) => {
+    const adminContainer = document.querySelector('.admin-container')
+    let currentMobilePage
+    if (e.target.classList.contains('mobile-menu-target')) {
+        currentMobilePage = e.target.parentElement.getAttribute("href");
+        for (let i = 0; i < mobileMenuTargetA.length; i++) {
+            adminContainer.children[i].style.display = 'none';
+            adminContainer.children[currentMobilePage].style.display = 'block';
+            mobileMenuTargetA[i].classList.remove('active');
+            e.target.parentElement.classList.add('active');
+        }
+    } else {
+        currentMobilePage = e.target.getAttribute("href");
+        for (let i = 0; i < mobileMenuTargetA.length; i++) {
+            adminContainer.children[i].style.display = 'none';
+            adminContainer.children[currentMobilePage].style.display = 'block';
+            mobileMenuTargetA[i].classList.remove('active');
+            e.target.classList.add('active');
+        }
+
+    }
+})

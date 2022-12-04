@@ -67,3 +67,19 @@ if (messagerSwiper) {
         }
     })
 }
+
+const paymentNavigation = document.querySelector('.payment-navigation');
+if (paymentNavigation) {
+    const paymentForms = document.querySelector('.payment-main__left').querySelectorAll('form');
+    paymentNavigation.addEventListener('click', (e) => {
+        if (e.target.classList.contains('button-nav')) {
+            let currentClick = e.target.getAttribute('currentClick');
+            for (let i = 0; i < paymentNavigation.children.length; i++) {
+                paymentNavigation.children[i].classList.remove('active');
+                e.target.classList.add('active');
+                paymentForms[i].style.display = "none";
+                paymentForms[currentClick].style.display = "block";
+            }
+        }
+    })
+}
