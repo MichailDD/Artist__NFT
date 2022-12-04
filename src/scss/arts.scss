@@ -1,11 +1,19 @@
 
 .art {
     position: relative;
+    padding-bottom: rem(76);
+    @media (max-width:$mobile){
+       padding-bottom: rem(38); 
+    }
 		// .art__blur
 
 		&__blur {
             position: absolute;
-            top: 0;
+            top: rem(-50);
+            right: rem(100);
+            @media (max-width:$mobile){
+                   display: none; 
+            }
 
 		}
 
@@ -13,21 +21,36 @@
 
 		&__decor01 {
             position: absolute;
-            display: none;
+            left:0 ;
+            top :rem(95);
+            @media (max-width:$mobile){
+                   display: none; 
+            }
 		}
 
 		// .art__decor02
 
 		&__decor02 {
             position: absolute;
-            display: none;
+            position: absolute;
+            right:0 ;
+            top :rem(95);
+            @media (max-width:$mobile){
+                  display: none; 
+           }
 		}
 
 		// .art__star
 
 		&__star {
             position: absolute;
-            display: none;
+                  top: rem(45);
+                  @include adaptiveValue("left",390 ,356 );
+                  @media (max-width:$mobile){
+                         width: rem(26);
+                         height: rem(36);
+                         top: rem(0); 
+                  }
 		}
 
 		// .art__container
@@ -38,7 +61,7 @@
 		// .art__content
 
 		&__content {
-            @include adaptiveValue("padding-top",53 ,26 );
+            @include adaptiveValue("padding-top",53 ,24 );
 		}
 
 		// .art__text
@@ -79,6 +102,11 @@
             position: relative;
             padding-left: rem(15);
             padding-top: rem(49);
+            padding-right: rem(15);
+            @media (max-width:$mobile){
+                   padding-left: rem(14); 
+                   padding-top: rem(48);
+            }
           
 		}
 
@@ -88,13 +116,20 @@
                   display: flex;
                   flex-direction: column;
                   gap: rem(24);
+                  @media (max-width:$mobile){
+                         gap: rem(19); 
+                  }
 		}
 
 		// .art__card
 
 		&__card {
             display: flex;
-            gap: rem(30)
+            gap: rem(30);
+            @media (max-width:$mobile){
+                    flex-direction: column;
+                    gap: rem(19);
+            }
 		}
 
 		// .art__item-big
@@ -227,6 +262,9 @@
                   background: url(../img/arts/pic02.png);
                   @include adaptiveValue("padding-top",94 ,20 );
                   border-radius: rem(12);
+                  @media (max-width:$mobile){
+                         background: url(../img/arts/pic02-mob.png); 
+                  }
                   @media (any-hover: hover){
                         &:hover{
                             transition: all 0.5s ;
@@ -276,6 +314,18 @@
 		// .star__circle
 
 		&__circle {
+                  position: absolute;
+                  width: rem(25);
+                  height: rem(25);
+                  border-radius: 50%;
+                  opacity: 0.4;
+                  border: 1px solid #FCFFFF;
+                  top: rem(185);
+                  right: rem(352);
+                  @media (max-width:$mobile){
+                         top: rem(72); 
+                         left: rem(-10);
+                  }
 		}
 }
 .nobr {
@@ -294,6 +344,12 @@
             line-height: rem(26);
             border-radius: rem(16);
             padding: rem(18) rem(45) rem(19) rem(45);
+            @media (max-width:$mobile){
+                  font-size: rem(15);
+                  line-height: rem(18);
+                  border-radius: rem(16);
+                  padding: rem(10) rem(30) rem(10) rem(30);    
+            }
 		}
 
 		// .atr__btn-arrow
@@ -306,6 +362,13 @@
             font-weight: 700;
             font-size: rem(18);
             line-height: rem(26);
+            @media (max-width:$mobile){
+                  font-size: rem(15);
+                  line-height: rem(18);
+                  border-radius: rem(16);
+                  padding: rem(10) rem(30) rem(10) rem(30);  
+                  gap: rem(8);
+            }
 		}
 }
 .title-bg {

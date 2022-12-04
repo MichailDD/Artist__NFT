@@ -2,6 +2,7 @@
 .header {
 	background-color: #1D1F21;
 	position: relative;
+	z-index: 5;
 	// .header__container
 
 	&__container {
@@ -217,7 +218,7 @@
 }
 .spollers {
 
-	// .spollers__item
+	spollers	// .spollers__item
 
 	&__item {
 	}
