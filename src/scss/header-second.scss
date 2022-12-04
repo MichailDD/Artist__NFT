@@ -9,7 +9,7 @@
 		display: flex;
 		align-items: center;
 		padding-top: 8px;
-		padding-bottom: rem(17);
+		padding-bottom: 8px;
 		padding-left: rem(8);
 
 		@media (max-width:$mobile) {
@@ -75,10 +75,17 @@
 	// .header__actions
 
 	.header__actions {
+		@media(max-width:800px) {
+			display: none;
+		}
+		@media(max-width:768px) {
+			display: block;
+		}
 		display: flex;
 		align-items: center;
 		gap: 0.8rem;
 		margin-right: 15px;
+
 	}
 
 	// .header__language
@@ -264,9 +271,12 @@
 
 		// .spollers__item
 
+
 		&__item {
 			margin-top: -4px;
-
+			@media(max-width:1200px) {
+				display: none;
+			}
 			button {
 				padding-top: 3px;
 				padding-right: 5px;
