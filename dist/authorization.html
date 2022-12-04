@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Authorization</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?_v=20221204075931" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221204075931">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<main class="authorization-main">
+		<div class="container">
+			<img src="img/logo.svg" alt="">
+			<h1>Authorization</h1>
+			<div class="switch-admin">
+				<button type="button " class="button-bg inspire__btn-bg button-active loginjs">Log in</button>
+				<button type="button" class="button-unactive signinjs">Sign up</button>
+			</div>
+			<div class="select-role-admin">
+				<label>Select your role</label>
+				<div class="select">
+					<p><input type="radio" name="select-role" id="" value="admin-for-client.html" checked>Customer</p>
+					<p><input type="radio" name="select-role" id="" value="admin-for-owner.html">Admin</p>
+					<p><input type="radio" name="select-role" id="" value="admin-for-worker.html">Artist</p>
+				</div>
+			</div>
+			<form>
+				<label>E-mail</label>
+				<input type="text" placeholder="Your e-mail">
+				<label>Passwrod</label>
+				<input type="text" placeholder="Your password">
+				<a href="admin-for-client.html" class="button-bg inspire__btn-bg open-admin-page">Send message</a>
+			</form>
+			<div class="bottom-text login-bottom-text">
+				<p>Don’t have account yet?</p>
+				<a href="#">Sign up</a>
+			</div>
+			<div class="bottom-text signin-bottom-text">
+				<p>Already have accoun?</p>
+				<a href="#">Log in</a>
+			</div>
+		</div>
+	</main>
+	<script src="js/app.min.js?_v=20221204075931"></script>
+</body>
+
+</html>
