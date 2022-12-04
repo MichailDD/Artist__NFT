@@ -1,0 +1,282 @@
+.live {
+position: relative;
+    // .live__decor-1
+
+    &__decor-1 {
+        position: absolute;
+        @include adaptiveValue("top",87 , 15);
+    }
+    &__blur{
+        display: none;
+        @media (max-width:$mobile){
+            display: inline-block;
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+    }
+
+    // .live__decor-2
+
+    &__decor-2 {
+        position: absolute;
+        top: rem(610);
+        left: rem(380);
+        @media (max-width:$mobile){
+             top: rem(695);
+             left: rem(30);
+        }
+    }
+
+    // .live__star
+
+    &__star {
+        position: absolute;
+        bottom: rem(60);
+        @include adaptiveValue("left",634 ,0 );
+        @media (max-width:$mobile){
+             bottom: rem(-280); 
+        }
+    }
+
+    // .live__star-small
+
+    &__star-small {
+        position: absolute;
+        right: rem(105);
+        top: rem(230);
+        @media (max-width:$mobile){
+             right: 0;
+             top: rem(300); 
+        }
+    }
+
+    // .live__container
+
+    &__container {
+    }
+
+    // .live__content
+
+    &__content {
+        display: flex;
+    }
+
+    // .live__decr
+
+    &__decr {
+        @include adaptiveValue("padding-top",164 ,65 );
+        padding-left: rem(18);
+        @media (max-width:$mobile){
+             padding-left: rem(15); 
+             position: relative;
+        }
+    }
+
+    // .live__title
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(64);
+        line-height: rem(65);
+        @media (max-width:$mobile){
+            font-size: rem(36);
+            line-height: rem(40); 
+        }
+    }
+
+    // .live__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        padding-top: rem(16);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24); 
+            padding-top: rem(8);
+        }
+    }
+
+    // .live__btn
+
+    &__btn {
+        border-radius: rem(16);
+        padding: rem(18) rem(73) rem(19) rem(74);
+        font-weight: 700;
+        font-size: rem(18);
+        line-height: rem(26);
+        @include adaptiveValue("margin-top",40 ,24 );
+        @media (max-width:$mobile){
+            border-radius: rem(12); 
+            font-size: rem(15);
+            line-height: rem(26);
+            padding: rem(12) rem(70) rem(13) rem(70);
+        }
+    }
+
+    // .live__hero
+
+    &__hero {
+    }
+
+    // .live__image
+
+    &__image {
+        position: absolute;
+        top: rem(13);
+        right: rem(173);
+        @media (max-width:$mobile){
+             right: 0;
+             top: rem(330); 
+        }
+    }
+}
+.designer{
+    @include adaptiveValue("padding-top",233,455 );
+    &__cards{
+        @media (max-width:$mobile){
+            margin-top: rem(33); 
+        }
+    }
+}
+.fees{
+    position: relative;
+    padding-top: rem(73);
+    &__icon{
+        z-index: 6;
+        position: absolute;
+        left: 0;
+        top:rem(75);
+    }
+    &__star{
+        @media (max-width:$mobile){
+             position: absolute;
+             top: rem(55);
+             left: rem(15); 
+        }
+    }
+    &__blur{
+        position: absolute;
+        top: rem(-200);
+        left: 0;
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+    &__deco01{
+      @media (max-width:$mobile){
+        position: absolute;
+        top: rem(44);
+        right:rem(25); 
+      }
+    }
+    &__dec{
+        position: absolute;
+        top:rem(117) ;
+        left: rem(0);
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+    &__dec03{
+        position: absolute;
+        top: rem(117);
+        right: 0;
+        @media (max-width:$mobile){
+            display: none; 
+       }
+    }
+    &__icon02{
+        z-index: 6;
+        position: absolute;
+        left: 0;
+        top:rem(70);
+    }
+    &__icon03{
+        z-index: 6;
+        position: absolute;
+        left: 0;
+        top:rem(75);
+    }
+    &__title{
+        font-weight: 700;
+        font-size: rem(36);
+        line-height: rem(50);
+        text-align: center;
+        @media (max-width:$mobile){
+            font-size: rem(26);
+            line-height: rem(34); 
+            text-align: left;
+            padding-left: rem(13);
+            padding-top: rem(50);
+        }
+      
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(28);
+        text-align: center;
+        padding-top: rem(16);
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(24);
+            text-align: left; 
+            padding-left: rem(13);
+            padding-top: rem(4);
+        }
+    }
+    &__ind{
+        position: absolute;
+        top: rem(25);
+        left: 0;
+    }
+    &__swip{
+        @media (max-width:$mobile){
+             margin-top: rem(20);
+        }
+    }
+    &__cards{
+        padding-left: rem(15);
+    }
+}
+.feel__pangination{
+    display: flex;
+    max-width: rem(345);
+    margin: 0 auto;
+    padding-top: rem(6);
+    height: rem(62);
+    background-color: #212426;
+    border-radius: rem(12);
+    @media (max-width:$mobile){
+         margin-top: rem(85); 
+
+         display: flex;
+    }
+    @media (min-width: em(1440)){
+          display: none;
+    }
+}
+.feel__slider{
+    z-index: 10;
+    position: relative;
+    @media (max-width:$mobile){
+        margin-left: rem(15);
+        margin-top: rem(20); 
+    }
+}
+.individual{
+    &__dec01{
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+    padding-top: rem(67);
+    padding-bottom: rem(117);
+    @media (max-width:$mobile){
+         padding-top: rem(10); 
+         padding-bottom: rem(50);
+    }
+}

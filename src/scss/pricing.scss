@@ -1,6 +1,7 @@
 .pricing {
 position: relative;
     // .pricing__deco01
+    @include adaptiveValue("padding-bottom",40 ,39 );
 
     &__deco01 {
         position: absolute;
