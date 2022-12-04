@@ -301,8 +301,8 @@
 		&__btn-arrow {
             display: flex;
             align-items: center;
-            gap: rem(8);
-            padding: rem(19) rem(35) rem(19) rem(30);
+            gap: rem(15);
+            padding: rem(19) rem(35) rem(19) rem(29);
             font-weight: 700;
             font-size: rem(18);
             line-height: rem(26);
@@ -332,4 +332,9 @@
             
            
 		}
+            &__none{
+                  @media (max-width:$mobile){
+                         display: none; 
+                  }
+            }
 }
