@@ -152,7 +152,7 @@
             line-height: rem(21);
             text-align: center;
             display: none;
-            padding-top: rem(2);
+            padding-top: rem(10);
             @media (max-width:$mobile){
                 font-size: rem(11);
                 line-height: rem(18); 
@@ -167,7 +167,7 @@
             line-height: rem(34);
             text-align: center;
             display: none;
-            padding-top: rem(17);
+            padding-top: rem(8);
 		}
 
 		// .art__actions
@@ -226,11 +226,13 @@
                   @include adaptiveValue("height",420 ,412 );
                   background: url(../img/arts/pic02.png);
                   @include adaptiveValue("padding-top",94 ,20 );
+                  border-radius: rem(12);
                   @media (any-hover: hover){
                         &:hover{
                             transition: all 0.5s ;
                             background: linear-gradient(140.92deg, rgba(104, 128, 255, 0.9) 3.3%, rgba(60, 167, 244, 0.9) 52.35%, rgba(140, 69, 255, 0.9) 92.15%);
                             opacity: 0.9;
+
                         }
                     }
                     &:hover .art__name{
@@ -255,11 +257,13 @@
 		// .art__subname-small
 
 		&__subname-small {
+                  padding-top: rem(2);
 		}
 
 		// .art__price-small
 
 		&__price-small {
+                  padding-top: rem(17);
 		}
 
 		// .art__actions-small
@@ -298,7 +302,7 @@
             display: flex;
             align-items: center;
             gap: rem(8);
-            padding: rem(19) rem(35) rem(19) rem(35);
+            padding: rem(19) rem(35) rem(19) rem(30);
             font-weight: 700;
             font-size: rem(18);
             line-height: rem(26);
